@@ -1,2 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");/*# sourceMappingURL=home.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+@media (min-width: 300px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gainsboro;
+    z-index: 1;
+    position: fixed;
+  }
+  nav > h3 {
+    text-transform: uppercase;
+    font-family: "Libre Baskerville", serif;
+    font-size: 28px;
+    margin: 0;
+    color: #6CC4A1;
+    letter-spacing: -1px;
+  }
+  nav > ul {
+    display: none;
+  }
+  details {
+    position: relative;
+    text-align: right;
+    width: 50%;
+  }
+  details > summary {
+    list-style: none;
+  }
+  details > summary i {
+    font-size: 28px;
+    color: #6CC4A1;
+  }
+  details > ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  details li {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    background-color: rgba(108, 196, 161, 0.6);
+  }
+  details li:last-child a {
+    border-bottom: none;
+  }
+  details a {
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 3% 5%;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  header {
+    position: relative;
+    padding-top: 5vh;
+  }
+  .carousel-inner {
+    height: 40vh;
+  }
+  .carousel-inner aside {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-inner figure:nth-child(1) aside {
+    background-image: url("/img/home/cycling01.jpg");
+  }
+  .carousel-inner figure:nth-child(2) aside {
+    background-image: url("/img/home/fishing01.jpg");
+  }
+  .carousel-inner figure:nth-child(3) aside {
+    background-image: url("/img/home/workout01.jpg");
+  }
+  .text-hd {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 14%;
+    text-align: center;
+  }
+  .text-hd article {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3.5vh;
+  }
+  .text-hd article:first-child {
+    display: none;
+  }
+  .text-hd h2 {
+    margin: 0;
+    color: #6CC4A1;
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .text-hd p {
+    margin: 0;
+    color: whitesmoke;
+    width: 90%;
+    text-align: center;
+    font-weight: 300;
+  }
+  .text-hd a {
+    background-color: #4CACBC;
+    color: white;
+    padding: 2% 4%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  footer {
+    background-color: white;
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5vh;
+  }
+  footer ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  footer a {
+    font-size: 24px;
+    color: #6CC4A1;
+  }
+  footer p {
+    margin: 0;
+    color: #6CC4A1;
+    font-size: 14px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=home.css.map */
