@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@media (min-width: 300px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gainsboro;
+    z-index: 1;
+    position: fixed;
+  }
+  nav > a {
+    text-transform: uppercase;
+    font-family: "Libre Baskerville", serif;
+    font-size: 28px;
+    margin: 0;
+    color: #6CC4A1;
+    letter-spacing: -1px;
+  }
+  nav > a:hover {
+    color: #6CC4A1;
+  }
+  nav > ul {
+    display: none;
+  }
+  details {
+    position: relative;
+    text-align: right;
+    width: 50%;
+  }
+  details > summary {
+    list-style: none;
+  }
+  details > summary i {
+    font-size: 28px;
+    color: #6CC4A1;
+  }
+  details > ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  details li {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    background-color: rgba(108, 196, 161, 0.9);
+  }
+  details li:last-child a {
+    border-bottom: none;
+  }
+  details a {
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 3% 5%;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  details a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=workout.css.map */
