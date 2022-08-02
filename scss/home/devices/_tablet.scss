@@ -1,0 +1,117 @@
+@media (min-width: 700px){
+  // NAVIGATION
+  nav{
+    > a{
+      font-size: 40px;
+    }
+
+    > ul{
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+
+      a{
+        text-transform: uppercase;
+        color: $bgMainColor;
+
+        &:hover{
+          color: $bgMainColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  details{
+    display: none;
+  }
+  // HEADER
+  .text-hd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    article{
+      width: 45%;
+      padding-top: 8%;
+      &:first-child{
+        display: block;
+        padding: 3%;
+        @include FlexBox;
+        align-items: center;
+        row-gap: 3.5vh;
+        padding-top: 8%;
+      }
+    }
+  }
+  // MAIN
+  .hobbies{
+    article{
+      > section{
+        height: 35vh;
+        justify-content: right;
+        align-items: flex-end;
+        padding: 2.5vh 1.5vh;
+      }
+
+      aside{
+        position: absolute;
+        width: 40%;
+        height: 20vh;
+        left: 4%;
+        margin-top: 5%;
+        border-radius: 10px;
+      }
+
+      h2{
+        width: 55%;
+        text-align: center;
+      }
+
+      a{
+        position: absolute;
+        left: 22.2%;
+        margin-top: 37%;
+      }
+
+      div{
+        width: 50%;
+        @include FlexBox;
+        justify-content: left;
+        align-items: flex-end;
+        position: absolute;
+        margin-top: 5%;
+      }
+      .card-body{
+        width: 100%;
+        margin: 0;
+        row-gap: 1vh;
+
+        a{
+          position: inherit;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .cycling, .fishing, .workout{
+      height: 35vh;
+    }
+  }
+
+  footer{
+    ul{
+      width: 50%;
+      padding-bottom: 3%;
+    }
+
+    a{
+      font-size: 40px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+  }
+}
