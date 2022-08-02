@@ -83,15 +83,17 @@
         position: absolute;
         margin-top: 5%;
       }
-      .card-body{
-        width: 100%;
-        margin: 0;
-        row-gap: 1vh;
+    }
 
-        a{
-          position: inherit;
-          margin-top: 0;
-        }
+    .card-body{
+      width: 100%;
+      margin: 0;
+      row-gap: 1vh;
+
+      a{
+        position: inherit;
+        margin-top: 0;
+        left: unset;
       }
     }
 

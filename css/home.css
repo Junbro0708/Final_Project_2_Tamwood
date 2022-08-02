@@ -224,7 +224,7 @@ li {
   }
   .hobbies article [aria-expanded=false] i {
     font-size: 40px;
-    color: #6CC4A1;
+    color: whitesmoke;
     animation-name: re-rotate;
     animation-duration: 0.2s;
     animation-fill-mode: backwards;
@@ -366,14 +366,15 @@ li {
     position: absolute;
     margin-top: 5%;
   }
-  .hobbies article .card-body {
+  .hobbies .card-body {
     width: 100%;
     margin: 0;
     row-gap: 1vh;
   }
-  .hobbies article .card-body a {
+  .hobbies .card-body a {
     position: inherit;
     margin-top: 0;
+    left: unset;
   }
   .hobbies .cycling, .hobbies .fishing, .hobbies .workout {
     height: 35vh;
@@ -387,5 +388,98 @@ li {
   }
   footer p {
     font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    padding: 0.5% 3%;
+  }
+  nav > a {
+    font-size: 28px;
+  }
+  nav > ul {
+    width: 30%;
+    padding: 0;
+    padding-right: 3%;
+  }
+  nav > ul a {
+    font-size: 16px;
+  }
+  header .carousel-inner {
+    height: 60vh;
+  }
+  header .carousel-inner aside {
+    height: 60vh;
+  }
+  .text-hd {
+    height: 60vh;
+    margin-top: 5vh;
+    padding-top: 1.5%;
+    justify-content: space-between;
+  }
+  .text-hd > article {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .text-hd > article p {
+    width: 65%;
+  }
+  .text-hd > article a {
+    padding: 1% 3%;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .text-hd > article a:hover {
+    background-color: #6CC4A1;
+  }
+  .hobbies article aside {
+    width: 35%;
+    height: 35vh;
+    margin: 0;
+  }
+  .hobbies article h2 {
+    font-weight: 200;
+    font-size: 36px;
+  }
+  .hobbies article a {
+    margin-top: 18.5%;
+    left: 20%;
+  }
+  .hobbies article p {
+    font-size: 18px;
+    line-height: 2;
+  }
+  .hobbies .cycling, .hobbies .fishing, .hobbies .workout {
+    height: 50vh;
+  }
+  .hobbies .cycling section, .hobbies .fishing section, .hobbies .workout section {
+    height: 50vh;
+    padding: 3% 5%;
+  }
+  .hobbies .card-body {
+    position: relative;
+  }
+  .hobbies .card-body a {
+    position: absolute;
+    width: fit-content;
+    right: 3%;
+    bottom: 5%;
+    left: unset;
+  }
+  .hobbies .card-body a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    padding: 2% 1%;
+  }
+  footer ul {
+    width: 40%;
+    padding: 1%;
+  }
+  footer ul a {
+    transition: 0.3s;
+  }
+  footer ul a:hover {
+    color: #4CACBC;
   }
 }/*# sourceMappingURL=home.css.map */
