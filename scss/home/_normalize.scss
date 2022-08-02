@@ -8,6 +8,24 @@ html{
   scroll-behavior: smooth;
 }
 
+main{
+  @include FlexBox;
+  padding-top: 5vh;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 li{
   list-style: none;
+}
+
+@keyframes rotate {
+  0%    {transform: rotate(0deg);}
+  100%  {transform: rotate(180deg);}
+}
+@keyframes re-rotate {
+  0%    {transform: rotate(180deg);}
+  100%  {transform: rotate(0deg);}
 }

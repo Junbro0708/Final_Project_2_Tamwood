@@ -12,13 +12,17 @@
     z-index: 1;
     position: fixed;
 
-    > h3{
+    > a{
       text-transform: uppercase;
       font-family: $FontFamily_L;
       font-size: 28px;
       margin: 0;
       color: $bgMainColor;
       letter-spacing: -1px;
+
+      &:hover{
+        color: $bgMainColor;
+      }
     }
 
     > ul{
@@ -43,7 +47,7 @@
     > ul{
       @include FlexBox;
       position: absolute;
-      top: 150%;
+      top: 160%;
       width: 100%;
       border-radius: 20px;
       z-index: 1;
@@ -53,7 +57,7 @@
       display: flex;
       width: 100%;
       list-style: none;
-      background-color: rgba($color: $bgMainColor, $alpha: 0.6);
+      background-color: rgba($color: $bgMainColor, $alpha: 0.9);
 
       &:last-child a{
         border-bottom: none;
@@ -70,6 +74,11 @@
       letter-spacing: 0.5px;
       font-size: 18px;
       font-weight: 100;
+
+      &:hover{
+        color: white;
+        text-decoration: underline;
+      }
     }
   }
   // HEADER
@@ -149,6 +158,95 @@
       text-transform: uppercase;
       letter-spacing: .5px;
     }
+  }
+
+  .hobbies{
+    @include FlexBox;
+    row-gap: 5vh;
+
+    article{
+      > section{
+        @include FlexBox;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5vh;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        padding: 5vh 3vh;
+      }
+
+      aside{
+        @include bgAttribute;
+        width: 100%;
+        height: 30vh;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      &:nth-child(1) aside{
+        background-image: url("/img/home/cycling02.jpg");
+      }
+      &:nth-child(2) aside{
+        background-image: url("/img/home/fishing02.jpg");
+      }
+      &:nth-child(3) aside{
+        background-image: url("/img/home/workout02.jpg");
+      }
+
+      [aria-expanded=true]{
+        i{
+          font-size: 40px;
+          color: $bgSubColor;
+          animation-name: rotate;
+          animation-duration: .2s;
+          animation-fill-mode: forwards;
+        }
+      }
+      [aria-expanded=false]{
+        i{
+          font-size: 40px;
+          color: $bgMainColor;
+          animation-name: re-rotate;
+          animation-duration: .2s;
+          animation-fill-mode: backwards;
+        }
+      }
+    }
+
+    h2{
+      font-size: 26px;
+      color: $bgMainColor;
+      margin: 0;
+      text-transform: capitalize;
+      font-weight: 300;
+    }
+
+    p{
+      border-radius: 0;
+      row-gap: 3vh;
+      align-items: center;
+      font-size: 16px;
+      color: #555;
+      @include FlexBox;
+
+      a{
+        text-transform: uppercase;
+        color: $bgMainColor;
+      }
+    }
+  }
+
+  .cycling{
+    background-image: url("/img/home/cycling_texture.jpg");
+    @include bgAttribute;
+  }
+  .fishing{
+    background-image: url("/img/home/fishing_texture.jpg");
+    @include bgAttribute;
+  }
+  .workout{
+    background-image: url("/img/home/workout_texture.jpg");
+    @include bgAttribute;
   }
 
   // FOOTER
