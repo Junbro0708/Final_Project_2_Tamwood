@@ -15,20 +15,20 @@
 <body>
   <!-- NAVIGATION -->
   <nav>
-    <h3>hobbies</h3>
+    <a href="./index.html">hobbies</a>
     <ul>
-      <li><a href="#">home</a></li>
-      <li><a href="#">cycling</a></li>
-      <li><a href="#">fishing</a></li>
-      <li><a href="#">workout</a></li>
+      <li><a href="./index.html">home</a></li>
+      <li><a href="./cycling.html">cycling</a></li>
+      <li><a href="./fishing.html">fishing</a></li>
+      <li><a href="./workout.html">workout</a></li>
     </ul>
     <details>
       <summary><i class="fa-solid fa-bars"></i></summary>
       <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">cycling</a></li>
-        <li><a href="#">fishing</a></li>
-        <li><a href="#">workout</a></li>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./cycling.html">cycling</a></li>
+        <li><a href="./fishing.html">fishing</a></li>
+        <li><a href="./workout.html">workout</a></li>
       </ul>
     </details>
   </nav>
@@ -65,40 +65,49 @@
     <!-- HOBBIES -->
     <section class="hobbies" id="hobbies">
       <article class="cycling">
-        <div>
-          <figure>
-            <aside></aside>
-            <figcaption>
-              <h2>Life of a threatened sheep</h2>
-              <p>Along with parasites and disease, predation is a threat to sheep health and consequently to the profitability of sheep raising. Sheep have very little ability to defend themselves, even when compared with other prey species kept as livestock. Even if sheep are not directly bitten or survive an attack, they may die from panic or from injuries sustained.</p>
-            </figcaption>
-          </figure>
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
+        <section>
+          <h2>Life of a threatened sheep</h2>
+          <aside></aside>
+          <a data-bs-toggle="collapse" href="#cycling_c" role="button" aria-expanded="false" aria-controls="cycling_c">
+          <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <div class="collapse" id="cycling_c">
+            <p class="card card-body">
+            Along with parasites and disease, predation is a threat to sheep health and consequently to the profitability of sheep raising. Sheep have very little ability to defend themselves, even when compared with other prey species kept as livestock. Even if sheep are not directly bitten or survive an attack, they may die from panic or from injuries sustained.
+            <a href="./cycling.html">Read More</a>
+            </p>
+          </div>
+        </section>
       </article>
       <article class="fishing">
-        <div>
-          <figure>
+        <section>
+          <h2>Life of a threatened sheep</h2>
           <aside></aside>
-          <figcaption>
-            <h2>Save the endangered birds</h2>
-            <p>There have been 15 bird extinctions in the Americas over the past 50 years. (most in Hawaii) Today, the majority of endangered birds outside the U.S. have at least some populations in protected areas, but significant gaps remain, and only 18 percent of the most threatened species can be considered effectively protected from extinction at present.</p>
-          </figcaption>
-          </figure>
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
+          <a data-bs-toggle="collapse" href="#cycling_f" role="button" aria-expanded="false" aria-controls="cycling_f">
+          <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <div class="collapse" id="cycling_f">
+            <p class="card card-body">
+            Along with parasites and disease, predation is a threat to sheep health and consequently to the profitability of sheep raising. Sheep have very little ability to defend themselves, even when compared with other prey species kept as livestock. Even if sheep are not directly bitten or survive an attack, they may die from panic or from injuries sustained.
+            <a href="./fishing.html">Read More</a>
+            </p>
+          </div>
+        </section>
       </article>
       <article class="workout">
-        <div>
-          <figure>
+        <section>
+          <h2>Life of a threatened sheep</h2>
           <aside></aside>
-          <figcaption>
-            <h2>Save the endangered birds</h2>
-            <p>There have been 15 bird extinctions in the Americas over the past 50 years. (most in Hawaii) Today, the majority of endangered birds outside the U.S. have at least some populations in protected areas, but significant gaps remain, and only 18 percent of the most threatened species can be considered effectively protected from extinction at present.</p>
-          </figcaption>
-          </figure>
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
+          <a data-bs-toggle="collapse" href="#cycling_w" role="button" aria-expanded="false" aria-controls="cycling_w">
+          <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <div class="collapse" id="cycling_w">
+            <p class="card card-body">
+            Along with parasites and disease, predation is a threat to sheep health and consequently to the profitability of sheep raising. Sheep have very little ability to defend themselves, even when compared with other prey species kept as livestock. Even if sheep are not directly bitten or survive an attack, they may die from panic or from injuries sustained.
+            <a href="./workout.html">Read More</a>
+            </p>
+          </div>
+        </section>
       </article>
     </section>
   </main>

@@ -10,10 +10,36 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes re-rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 @media (min-width: 300px) {
   nav {
     display: flex;
@@ -27,13 +53,16 @@ li {
     z-index: 1;
     position: fixed;
   }
-  nav > h3 {
+  nav > a {
     text-transform: uppercase;
     font-family: "Libre Baskerville", serif;
     font-size: 28px;
     margin: 0;
     color: #6CC4A1;
     letter-spacing: -1px;
+  }
+  nav > a:hover {
+    color: #6CC4A1;
   }
   nav > ul {
     display: none;
@@ -54,7 +83,7 @@ li {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 150%;
+    top: 160%;
     width: 100%;
     border-radius: 20px;
     z-index: 1;
@@ -63,7 +92,7 @@ li {
     display: flex;
     width: 100%;
     list-style: none;
-    background-color: rgba(108, 196, 161, 0.6);
+    background-color: rgba(108, 196, 161, 0.9);
   }
   details li:last-child a {
     border-bottom: none;
@@ -78,6 +107,10 @@ li {
     letter-spacing: 0.5px;
     font-size: 18px;
     font-weight: 100;
+  }
+  details a:hover {
+    color: white;
+    text-decoration: underline;
   }
   header {
     position: relative;
@@ -143,6 +176,91 @@ li {
     border-radius: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+  }
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .hobbies article > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5vh 3vh;
+  }
+  .hobbies article aside {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .hobbies article:nth-child(1) aside {
+    background-image: url("/img/home/cycling02.jpg");
+  }
+  .hobbies article:nth-child(2) aside {
+    background-image: url("/img/home/fishing02.jpg");
+  }
+  .hobbies article:nth-child(3) aside {
+    background-image: url("/img/home/workout02.jpg");
+  }
+  .hobbies article [aria-expanded=true] i {
+    font-size: 40px;
+    color: #A0D995;
+    animation-name: rotate;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .hobbies article [aria-expanded=false] i {
+    font-size: 40px;
+    color: #6CC4A1;
+    animation-name: re-rotate;
+    animation-duration: 0.2s;
+    animation-fill-mode: backwards;
+  }
+  .hobbies h2 {
+    font-size: 26px;
+    color: #6CC4A1;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  .hobbies p {
+    border-radius: 0;
+    row-gap: 3vh;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies p a {
+    text-transform: uppercase;
+    color: #6CC4A1;
+  }
+  .cycling {
+    background-image: url("/img/home/cycling_texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fishing {
+    background-image: url("/img/home/fishing_texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .workout {
+    background-image: url("/img/home/workout_texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   footer {
     background-color: white;
