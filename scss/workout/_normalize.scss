@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $FontFamily_O;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+main{
+  @include FlexBox;
+  row-gap: 10vh;
+  padding-top: 5vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
