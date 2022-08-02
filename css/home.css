@@ -16,6 +16,10 @@ main {
   padding-top: 5vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -161,6 +165,7 @@ li {
     color: #6CC4A1;
     font-size: 26px;
     font-weight: 300;
+    padding-top: 2%;
   }
   .text-hd p {
     margin: 0;
@@ -187,10 +192,10 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 5vh;
+    row-gap: 3vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 5vh 3vh;
+    padding: 5vh 3vh 3vh 3vh;
   }
   .hobbies article aside {
     background-position: center;
@@ -275,6 +280,7 @@ li {
     width: 60%;
     justify-content: space-between;
     margin: 0;
+    padding: 0;
     padding-top: 3%;
     padding-bottom: 5%;
   }
@@ -287,5 +293,99 @@ li {
     color: #6CC4A1;
     font-size: 14px;
     text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  nav > a {
+    font-size: 40px;
+  }
+  nav > ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  nav > ul a {
+    text-transform: uppercase;
+    color: #6CC4A1;
+  }
+  nav > ul a:hover {
+    color: #6CC4A1;
+    text-decoration: underline;
+  }
+  details {
+    display: none;
+  }
+  .text-hd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .text-hd article {
+    width: 45%;
+    padding-top: 8%;
+  }
+  .text-hd article:first-child {
+    display: block;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3.5vh;
+    padding-top: 8%;
+  }
+  .hobbies article > section {
+    height: 35vh;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 2.5vh 1.5vh;
+  }
+  .hobbies article aside {
+    position: absolute;
+    width: 40%;
+    height: 20vh;
+    left: 4%;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+  .hobbies article h2 {
+    width: 55%;
+    text-align: center;
+  }
+  .hobbies article a {
+    position: absolute;
+    left: 22.2%;
+    margin-top: 37%;
+  }
+  .hobbies article div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-end;
+    position: absolute;
+    margin-top: 5%;
+  }
+  .hobbies article .card-body {
+    width: 100%;
+    margin: 0;
+    row-gap: 1vh;
+  }
+  .hobbies article .card-body a {
+    position: inherit;
+    margin-top: 0;
+  }
+  .hobbies .cycling, .hobbies .fishing, .hobbies .workout {
+    height: 35vh;
+  }
+  footer ul {
+    width: 50%;
+    padding-bottom: 3%;
+  }
+  footer a {
+    font-size: 40px;
+  }
+  footer p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=home.css.map */

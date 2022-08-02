@@ -89,7 +89,6 @@
 
   .carousel-inner{
     height: 40vh;
-    // background-color: $bgColor;
 
     aside{
       width: 100%;
@@ -140,6 +139,7 @@
       color: $bgMainColor;
       font-size: 26px;
       font-weight: 300;
+      padding-top: 2%;
     }
 
     p{
@@ -169,10 +169,10 @@
         @include FlexBox;
         align-items: center;
         justify-content: center;
-        row-gap: 5vh;
+        row-gap: 3vh;
         width: 100%;
         background-color: rgba($color: #000000, $alpha: 0.6);
-        padding: 5vh 3vh;
+        padding: 5vh 3vh 3vh 3vh;
       }
 
       aside{
@@ -262,6 +262,7 @@
       width: 60%;
       justify-content: space-between;
       margin: 0;
+      padding: 0;
       padding-top: 3%;
       padding-bottom: 5%;
     }
