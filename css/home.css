@@ -409,6 +409,15 @@ li {
     row-gap: 3.5vh;
     padding-top: 8%;
   }
+  .about > figure {
+    flex-direction: row;
+  }
+  .about > figure aside {
+    width: 50%;
+  }
+  .about > figure figcaption {
+    width: 50%;
+  }
   .hobbies article > section {
     height: 35vh;
     justify-content: right;
@@ -453,6 +462,34 @@ li {
   }
   .hobbies .cycling, .hobbies .fishing, .hobbies .workout {
     height: 35vh;
+  }
+  .faqs {
+    flex-direction: row;
+  }
+  .faqs > article {
+    width: 50%;
+  }
+  .faqs > article:first-child {
+    padding: 3%;
+  }
+  .faqs > article:first-child h2 {
+    padding: 0;
+  }
+  .faqs > article:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vh;
+  }
+  .faqs > article:last-child h2 {
+    margin: 0;
+    font-size: 21px;
+    color: #333;
+    font-weight: 600;
+  }
+  .faqs > article:last-child .accordion {
+    width: 100%;
   }
   footer ul {
     width: 50%;
