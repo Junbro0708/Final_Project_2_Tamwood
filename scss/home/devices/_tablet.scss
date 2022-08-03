@@ -133,6 +133,7 @@
 
     > article:last-child{
       @include FlexBox;
+      padding: 3%;
       justify-content: center;
       align-items: center;
       row-gap: 2vh;
