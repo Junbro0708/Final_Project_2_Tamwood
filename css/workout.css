@@ -504,6 +504,7 @@ li {
   }
   .contact section textarea {
     height: 30vh;
+    resize: none;
   }
   .contact section [type=submit] {
     width: 45%;
@@ -724,5 +725,170 @@ li {
   }
   footer a {
     font-size: 35px;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    padding: 0.5% 3%;
+  }
+  nav > a {
+    font-size: 28px;
+  }
+  nav > ul {
+    width: 45%;
+    padding: 0;
+    padding-right: 3%;
+  }
+  nav > ul a {
+    font-size: 16px;
+  }
+  header {
+    height: 60vh;
+  }
+  header section p {
+    padding-bottom: 9vh;
+  }
+  header section a {
+    padding: 0.8% 1.6%;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  header section a:hover {
+    background-color: #6CC4A1;
+  }
+  main {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .about {
+    height: 50vh;
+  }
+  .about article:last-child {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .about article:last-child p {
+    width: 80%;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-inner figure {
+    height: 100%;
+  }
+  .carousel-inner aside {
+    height: 100% !important;
+  }
+  .machines {
+    row-gap: 10vh;
+  }
+  .machines > article:first-child {
+    row-gap: 3vh;
+  }
+  .machines > article:first-child h2 {
+    font-size: 24px;
+  }
+  .machines > article:first-child p {
+    width: 50%;
+  }
+  .machines > article:last-child figure {
+    width: 25%;
+    row-gap: 5vh;
+  }
+  .machines > article:last-child a {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .machines > article:last-child a:hover {
+    background-color: #6CC4A1;
+  }
+  .testimonial {
+    row-gap: 10vh;
+  }
+  .testimonial > article:first-child {
+    row-gap: 3vh;
+  }
+  .testimonial > article:first-child h2 {
+    font-size: 24px;
+  }
+  .testimonial > article:first-child p {
+    width: 50%;
+  }
+  .testimonial > article:last-child .card {
+    width: 30%;
+  }
+  .testimonial > article:last-child a {
+    transition: 0.4s;
+  }
+  .testimonial > article:last-child a:hover {
+    color: #6CC4A1;
+  }
+  .gallery {
+    row-gap: 10vh;
+  }
+  .gallery > article:first-child {
+    row-gap: 3vh;
+  }
+  .gallery > article:first-child h2 {
+    font-size: 24px;
+  }
+  .gallery > article:first-child p {
+    width: 50%;
+  }
+  .gallery > article:last-child {
+    row-gap: 5vh;
+  }
+  .gallery > article:last-child aside {
+    width: 30%;
+    padding-bottom: 30%;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .gallery > article:last-child aside:hover {
+    transform: scale(1.05);
+    border-radius: 0;
+  }
+  .contact {
+    row-gap: 10vh;
+  }
+  .contact > article:first-child {
+    row-gap: 3vh;
+  }
+  .contact > article:first-child h2 {
+    font-size: 24px;
+  }
+  .contact > article:first-child p {
+    width: 50%;
+  }
+  .contact > article:last-child {
+    padding: 10% 5%;
+  }
+  .contact section input, .contact section textarea {
+    font-size: 18px;
+  }
+  .contact section [type=submit] {
+    width: 30%;
+    padding: 1.5% 0.5%;
+    transition: 0.4s;
+  }
+  .contact section [type=submit]:hover {
+    background-color: #A0D995;
+  }
+  footer {
+    padding: 2% 1%;
+  }
+  footer ul {
+    width: 30%;
+    padding: 1%;
+    padding-top: 0;
+  }
+  footer ul a {
+    transition: 0.3s;
+  }
+  footer ul a:hover {
+    color: #4CACBC;
   }
 }/*# sourceMappingURL=workout.css.map */
