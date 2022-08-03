@@ -313,6 +313,9 @@
     > article:last-child{
       padding: 3%;
       background-color: $bgSubColor;
+      @include FlexBox;
+      align-items: center;
+      row-gap: 3vh;
     }
     
     .accordion-item{
@@ -322,6 +325,10 @@
       &:last-child{
         border: none;
       }
+    }
+
+    .accordion{
+      width: 100%;
     }
 
     .accordion-button{
