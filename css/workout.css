@@ -507,8 +507,8 @@ li {
   }
   .contact section [type=submit] {
     width: 45%;
-    background-color: #F6E3C5;
-    color: #4CACBC;
+    background-color: #6CC4A1;
+    color: white;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
@@ -519,6 +519,13 @@ li {
     margin: 0;
     color: white;
     text-transform: uppercase;
+  }
+  .contact section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;
   }
   .contact section address, .contact section a {
     margin: 0;
@@ -552,5 +559,159 @@ li {
     color: #6CC4A1;
     font-size: 14px;
     text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  nav > a {
+    font-size: 40px;
+  }
+  nav > ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul a {
+    text-transform: uppercase;
+    color: #6CC4A1;
+  }
+  nav > ul a:hover {
+    color: #6CC4A1;
+    text-decoration: underline;
+  }
+  details {
+    display: none;
+  }
+  header section h2 {
+    font-size: 40px;
+    font-family: "Libre Baskerville", serif;
+    text-transform: none;
+    letter-spacing: 0.5px;
+  }
+  header section p {
+    font-size: 21px;
+    padding-bottom: 4vh;
+  }
+  header section a {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+  }
+  .about article:first-child {
+    width: 50%;
+  }
+  .about article:last-child {
+    width: 50%;
+  }
+  .about article:last-child p {
+    padding: 0;
+    font-size: 17px;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-inner figure {
+    height: 100%;
+  }
+  .carousel-inner aside {
+    height: 100%;
+  }
+  .machines > article:first-child {
+    align-items: center;
+    row-gap: 1vh;
+  }
+  .machines > article:first-child h2 {
+    font-size: 28px;
+  }
+  .machines > article:first-child p {
+    width: 80%;
+    font-size: 18px;
+  }
+  .machines > article:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .machines > article:last-child figure {
+    width: 50%;
+  }
+  .machines > article:last-child a {
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+  .testimonial > article:first-child {
+    align-items: center;
+    row-gap: 1vh;
+  }
+  .testimonial > article:first-child h2 {
+    font-size: 28px;
+  }
+  .testimonial > article:first-child p {
+    width: 80%;
+    font-size: 18px;
+  }
+  .testimonial > article:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .testimonial > article:last-child .card {
+    width: 45%;
+  }
+  .gallery > article:first-child {
+    align-items: center;
+    row-gap: 1vh;
+  }
+  .gallery > article:first-child h2 {
+    font-size: 28px;
+  }
+  .gallery > article:first-child p {
+    width: 80%;
+    font-size: 18px;
+  }
+  .gallery > article:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gallery > article:last-child aside {
+    width: 45%;
+    padding-bottom: 45%;
+  }
+  .contact > article:first-child {
+    align-items: center;
+    row-gap: 1vh;
+  }
+  .contact > article:first-child h2 {
+    font-size: 28px;
+  }
+  .contact > article:first-child p {
+    width: 80%;
+    font-size: 18px;
+  }
+  .contact > article:last-child {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .contact > article:last-child > section:first-child {
+    width: 55%;
+  }
+  .contact > article:last-child > section:last-child {
+    width: 40%;
+    justify-content: space-between;
+  }
+  .contact > article:last-child h3 {
+    font-size: 28px;
+  }
+  .contact > article:last-child div {
+    row-gap: 3vh;
+  }
+  .contact > article:last-child a, .contact > article:last-child address {
+    font-size: 21px;
   }
 }/*# sourceMappingURL=workout.css.map */
