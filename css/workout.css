@@ -714,4 +714,15 @@ li {
   .contact > article:last-child a, .contact > article:last-child address {
     font-size: 21px;
   }
+  footer {
+    padding: 4% 3%;
+  }
+  footer ul {
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 3%;
+  }
+  footer a {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=workout.css.map */
