@@ -53,6 +53,30 @@
     }
   }
 
+  .about{
+    > figure{
+      height: 100%;
+
+      aside{
+        width: 40%;
+        height: 50vh;
+      }
+
+      figcaption{
+        width: 60%;
+        align-items: center;
+      }
+
+      h2{
+        width: 80%;
+      }
+
+      p{
+        width: 70%;
+      }
+    }
+  }
+
   .hobbies{
     article{
       aside{
@@ -100,6 +124,23 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  .faqs{
+    > article:first-child{
+      align-items: center;
+      
+      p{
+        width: 70%;
+      }
+    }
+
+    .accordion-button{
+      padding: 3% 1.5%;
+      font-size: 18px;
+      color: #555;
+      font-weight: 600;
     }
   }
 

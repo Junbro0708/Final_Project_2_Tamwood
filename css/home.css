@@ -544,6 +544,23 @@ li {
   .text-hd > article a:hover {
     background-color: #6CC4A1;
   }
+  .about > figure {
+    height: 100%;
+  }
+  .about > figure aside {
+    width: 40%;
+    height: 50vh;
+  }
+  .about > figure figcaption {
+    width: 60%;
+    align-items: center;
+  }
+  .about > figure h2 {
+    width: 80%;
+  }
+  .about > figure p {
+    width: 70%;
+  }
   .hobbies article aside {
     width: 35%;
     height: 35vh;
@@ -580,6 +597,18 @@ li {
   }
   .hobbies .card-body a:hover {
     text-decoration: underline;
+  }
+  .faqs > article:first-child {
+    align-items: center;
+  }
+  .faqs > article:first-child p {
+    width: 70%;
+  }
+  .faqs .accordion-button {
+    padding: 3% 1.5%;
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
   }
   footer {
     padding: 2% 1%;
