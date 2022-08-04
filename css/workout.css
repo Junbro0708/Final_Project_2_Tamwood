@@ -389,6 +389,102 @@ li {
     display: flex;
     flex-direction: column;
   }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .modal-body .modal-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .modal-body .modal-img {
+    width: 100%;
+    height: 30vh;
+  }
+  .modal-body section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: center;
+  }
+  .chest01 {
+    background-image: url("/img/workout/chest01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .chest02 {
+    background-image: url("/img/workout/chest02.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .chest03 {
+    background-image: url("/img/workout/chest03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .back01 {
+    background-image: url("/img/workout/back01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .back02 {
+    background-image: url("/img/workout/back02.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .back03 {
+    background-image: url("/img/workout/back03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .small01 {
+    background-image: url("/img/workout/small01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .small02 {
+    background-image: url("/img/workout/small02.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .small03 {
+    background-image: url("/img/workout/small03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leg01 {
+    background-image: url("/img/workout/leg01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leg02 {
+    background-image: url("/img/workout/leg02.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leg03 {
+    background-image: url("/img/workout/leg03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .gallery {
     display: flex;
     flex-direction: column;
@@ -643,6 +739,9 @@ li {
   .machines > article:last-child a {
     font-size: 21px;
     text-transform: uppercase;
+  }
+  .modal-body > .modal-container {
+    width: 100%;
   }
   .testimonial > article:first-child {
     align-items: center;
