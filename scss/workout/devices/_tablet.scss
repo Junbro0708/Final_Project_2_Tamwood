@@ -111,6 +111,12 @@
     }
   }
 
+  .modal-body{
+    > .modal-container{
+      width: 100%;
+    }
+  }
+
   .testimonial{
     > article:first-child{
       align-items: center;

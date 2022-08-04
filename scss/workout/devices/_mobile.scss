@@ -352,6 +352,83 @@
     }
   }
 
+  .modal-body{
+    @include FlexBox;
+    row-gap: 5vh;
+
+    .modal-container{
+      @include FlexBox;
+      row-gap: 3vh;
+    }
+
+    .modal-img{
+      width: 100%;
+      height: 30vh;
+    }
+
+    section{
+      @include FlexBox;
+      row-gap: 1vh;
+      align-items: center;
+    }
+  }
+
+  .chest01{
+    background-image: url("/img/workout/chest01.png");
+    @include bgAttribute;
+  }
+  .chest02{
+    background-image: url("/img/workout/chest02.png");
+    @include bgAttribute;
+  }
+  .chest03{
+    background-image: url("/img/workout/chest03.png");
+    @include bgAttribute;
+  }
+
+  .back01{
+    background-image: url("/img/workout/back01.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .back02{
+    background-image: url("/img/workout/back02.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .back03{
+    background-image: url("/img/workout/back03.png");
+    @include bgAttribute;
+  }
+
+  .small01{
+    background-image: url("/img/workout/small01.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .small02{
+    background-image: url("/img/workout/small02.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .small03{
+    background-image: url("/img/workout/small03.png");
+    @include bgAttribute;
+  }
+
+  .leg01{
+    background-image: url("/img/workout/leg01.png");
+    @include bgAttribute;
+  }
+  .leg02{
+    background-image: url("/img/workout/leg02.png");
+    @include bgAttribute;
+  }
+  .leg03{
+    background-image: url("/img/workout/leg03.png");
+    @include bgAttribute;
+  }
+
   .gallery{
     @include FlexBox;
     row-gap: 5vh;
