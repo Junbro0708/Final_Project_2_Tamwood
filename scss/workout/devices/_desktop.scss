@@ -100,6 +100,23 @@
         }
       }
     }
+
+    .modal-content{
+      width: fit-content;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .modal-body{
+      flex-direction: row;
+      column-gap: 5vh;
+
+      .modal-img{
+        width: 30vw;
+      }
+    }
   }
 
   .testimonial{
