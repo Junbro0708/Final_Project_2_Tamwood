@@ -903,6 +903,20 @@ li {
   .machines > article:last-child a:hover {
     background-color: #6CC4A1;
   }
+  .machines .modal-content {
+    width: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .machines .modal-body {
+    flex-direction: row;
+    column-gap: 5vh;
+  }
+  .machines .modal-body .modal-img {
+    width: 30vw;
+  }
   .testimonial {
     row-gap: 10vh;
   }
