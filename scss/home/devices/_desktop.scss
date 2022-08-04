@@ -7,6 +7,7 @@
     }
 
     > ul{
+      display: flex;
       width: 30%;
       padding: 0;
       padding-right: 3%;
@@ -15,6 +16,10 @@
         font-size: 16px;
       }
     }
+  }
+
+  details{
+    display: none;
   }
   
   header{
@@ -92,6 +97,7 @@
 
       a{
         margin-top: 18.5%;
+        top: unset !important;
         left: 20%;
       }
 

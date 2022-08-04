@@ -7,7 +7,7 @@
 
     > ul{
       width: 50%;
-      display: flex;
+      display: none;
       justify-content: space-between;
       margin: 0;
 
@@ -24,7 +24,17 @@
   }
 
   details{
-    display: none;
+    display: block;
+
+    > summary{
+      i{
+        font-size: 40px;
+      }
+    }
+
+    > ul{
+      top: 187%;
+    }
   }
   // HEADER
   .text-hd{
@@ -86,7 +96,6 @@
       a{
         position: absolute;
         left: 22.2%;
-        margin-top: 37%;
       }
 
       div{
@@ -96,6 +105,24 @@
         align-items: flex-end;
         position: absolute;
         margin-top: 5%;
+      }
+    }
+
+    .cycling{
+      a{
+        top: 113%;
+      }
+    }
+
+    .fishing{
+      a{
+        top: 153%;
+      }
+    }
+
+    .workout{
+      a{
+        top: 193%;
       }
     }
 

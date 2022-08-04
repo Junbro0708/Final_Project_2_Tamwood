@@ -383,7 +383,7 @@ li {
   }
   nav > ul {
     width: 50%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin: 0;
   }
@@ -396,7 +396,13 @@ li {
     text-decoration: underline;
   }
   details {
-    display: none;
+    display: block;
+  }
+  details > summary i {
+    font-size: 40px;
+  }
+  details > ul {
+    top: 187%;
   }
   .text-hd {
     display: flex;
@@ -446,7 +452,6 @@ li {
   .hobbies article a {
     position: absolute;
     left: 22.2%;
-    margin-top: 37%;
   }
   .hobbies article div {
     width: 50%;
@@ -456,6 +461,15 @@ li {
     align-items: flex-end;
     position: absolute;
     margin-top: 5%;
+  }
+  .hobbies .cycling a {
+    top: 113%;
+  }
+  .hobbies .fishing a {
+    top: 153%;
+  }
+  .hobbies .workout a {
+    top: 193%;
   }
   .hobbies .card-body {
     width: 100%;
@@ -518,12 +532,16 @@ li {
     font-size: 28px;
   }
   nav > ul {
+    display: flex;
     width: 30%;
     padding: 0;
     padding-right: 3%;
   }
   nav > ul a {
     font-size: 16px;
+  }
+  details {
+    display: none;
   }
   header .carousel-inner {
     height: 60vh;
@@ -580,6 +598,7 @@ li {
   }
   .hobbies article a {
     margin-top: 18.5%;
+    top: unset !important;
     left: 20%;
   }
   .hobbies article p {
