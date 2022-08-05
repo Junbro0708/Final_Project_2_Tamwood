@@ -2,7 +2,16 @@
     padding: 0;
     margin: 0;
     font-family: $FontFamily_O;
+    box-sizing: border-box;
+
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 
 html{
     scroll-behavior: smooth;
@@ -14,10 +23,9 @@ body{
     background-color: var($bgMainColor);
 }
 
-main{
-    padding-left: 5%;
-    padding-right: 5%;
-}
+// main{
+
+// }
 
 h1, h2, h3{
     color: $bgMainColor;
@@ -26,3 +34,16 @@ h1, h2, h3{
 p, span, small, h3{
     font-family: $FontFamily_O;
 }
+
+
+a{
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
