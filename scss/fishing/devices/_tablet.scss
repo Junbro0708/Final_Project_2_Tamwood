@@ -1,5 +1,56 @@
 @media (min-width: 700px) {
 
+    nav{
+
+        > a{
+          font-size: 40px;
+        }
+    
+        > ul{
+          width: 65%;
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          padding: 0;
+    
+          a{
+            text-transform: uppercase;
+            color: $bgMainColor;
+    
+            &:hover{
+              color: $bgMainColor;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    
+      details{
+        display: none;
+      }
+    
+      // HEADER
+      header{
+        section{
+          h2{
+            font-size: 40px;
+            font-family: $FontFamily_L;
+            text-transform: none;
+            letter-spacing: .5px;
+          }
+    
+          p{
+            font-size: 21px;
+            padding-bottom: 4vh;
+          }
+    
+          a{
+            font-size: 18px;
+            padding: 1% 2%;
+          }
+        }
+      }
+
     p {
         font-size: 25px;
     }

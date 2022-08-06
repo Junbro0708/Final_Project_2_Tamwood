@@ -429,6 +429,41 @@ a {
   }
 }
 @media (min-width: 700px) {
+  nav > a {
+    font-size: 40px;
+  }
+  nav > ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul a {
+    text-transform: uppercase;
+    color: #6CC4A1;
+  }
+  nav > ul a:hover {
+    color: #6CC4A1;
+    text-decoration: underline;
+  }
+  details {
+    display: none;
+  }
+  header section h2 {
+    font-size: 40px;
+    font-family: "Libre Baskerville", serif;
+    text-transform: none;
+    letter-spacing: 0.5px;
+  }
+  header section p {
+    font-size: 21px;
+    padding-bottom: 4vh;
+  }
+  header section a {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
   p {
     font-size: 25px;
   }
