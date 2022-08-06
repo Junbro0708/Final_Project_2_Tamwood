@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");/*# sourceMappingURL=home.css.map */
+
 * {
   margin: 0;
   padding: 0;
@@ -651,3 +653,4 @@ li {
     color: #4CACBC;
   }
 }/*# sourceMappingURL=home.css.map */
+

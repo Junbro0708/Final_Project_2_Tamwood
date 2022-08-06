@@ -1,0 +1,507 @@
+
+@media (min-width:300px){
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 5%;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 2px -2px gainsboro;
+        z-index: 1;
+        position: fixed;
+
+        > a{
+            font-family: $FontFamily_L;
+            text-transform: uppercase;
+            font-size: 28px;
+            margin: 0;
+            color: $bgMainColor;
+            letter-spacing: -1px;
+
+            &:hover{
+                color: $bgMainColor;
+            }
+
+        }
+
+        > ul{
+            display: none;
+        }
+    }
+    
+    details{
+        position: relative;
+        text-align: right;
+        width: 70%;
+
+        > summary{
+            list-style-type: none;
+            font-size: 28px;
+            color: $bgMainColor;
+        }
+
+        > ul{
+            @include FlexBox;
+            position: absolute;
+            top: 160%;
+            width: 100%;
+            border-radius: 20px;
+            z-index: 1;
+        }
+
+        li{
+            display: flex;
+            width: 100%;
+            list-style: none;
+            background-color: rgba($color: $bgMainColor, $alpha: 0.9);
+    
+            &:last-child a{
+                border-bottom: none;
+            }
+
+            a{
+                width: 100%;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                padding: 3% 5%;
+                border-bottom: 1px solid white;
+                letter-spacing: 0.5px;
+                font-size: 18px;
+                font-weight: 100;
+        
+                &:hover{
+                color: white;
+                text-decoration: underline;
+                }
+            }
+        }
+
+    }
+
+    header{
+        background-image: url("/img/cycle/header-bg.jpg");
+        @include bgAttribute;
+        height: 50vh;
+    
+        section{
+          height: 100%;
+          background-color: rgba($color: #333, $alpha: 0.6);
+          @include FlexBox;
+          justify-content: center;
+          align-items: center;
+    
+          h2{
+            margin: 0;
+            padding-top: 7vh;
+            color: whitesmoke;
+            font-size: 28px;
+            text-transform: capitalize;
+            text-align: center;
+          }
+    
+          p{
+            margin: 0;
+            color: $bgMainColor;
+            text-transform: capitalize;
+            padding-top: 0.5vh;
+            padding-bottom: 5vh;
+          }
+    
+          a{
+            background-color: $bgBtnColor;
+            color: white;
+            padding: 2% 4%;
+            border: 2px solid $bgBtnColor;
+            border-radius: 10px;
+            transition: .4s;
+    
+            &:hover{
+                background-color: transparent;
+                color: white;
+                transition: .4s;
+                border: 2px solid $bgBtnColor;
+            }
+          }
+        }
+      }
+
+    main{
+        @include FlexBox;
+
+        > section{
+            @include FlexBox;
+            padding-top: 15%;
+            padding-bottom: 15%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        > section{
+            &:nth-child(even){
+                background-color: $bgColor;
+            }
+        }
+    }
+    
+    footer{
+        background-color: white;
+        padding: 5% 3%;
+        @include FlexBox;
+        align-items: center;
+        row-gap: .5vh;
+    
+        ul{
+          display: flex;
+          width: 60%;
+          justify-content: space-between;
+          margin: 0;
+          padding: 0;
+          padding-top: 3%;
+          padding-bottom: 5%;
+        }
+    
+        a{
+          font-size: 24px;
+          color: $bgMainColor;
+        }
+    
+        p{
+          margin: 0;
+          color: $bgMainColor;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+
+    img{
+        width: 100%;
+    }
+
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+        h2{
+            font-weight: 600;
+            text-align: center;
+
+        }
+
+        p{
+            font-size: 16px;
+            text-align: center;
+            color: dimgray;
+        }
+    }
+
+    // series start
+    .series{
+        padding-top: 25%;
+
+        div {
+            display: block;
+        }
+
+        p{
+            color: dimgray;
+        }
+
+    }
+
+    .port-row{
+        display: flex;
+
+        h3{
+            padding: 2%;
+            font-size: 20px;
+        }
+
+        > div{
+            padding-bottom: 10%;
+        }
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1055;
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        outline: 0;
+    }
+
+    .fade {
+        transition: opacity 0.15s linear;
+    }
+
+    .portfolio-modal .modal-dialog {
+        margin: 1rem;
+        max-width: 100vw;
+    }
+
+    .portfolio-modal .modal-content {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        text-align: center;
+    }
+
+    .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .portfolio-modal .modal-content p.item-intro {
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-modal .modal-content p {
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-modal .modal-content ul.list-inline {
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-modal .modal-content img {
+        margin-bottom: 2rem;    
+    }
+
+    .btn-primary{
+        color: white;
+        background-color: $bgMainColor;
+        border: 2px solid $bgMainColor;
+
+        &:hover{
+            color: $bgMainColor !important;
+            background-color: white !important;
+            border: 2px solid $bgMainColor !important;
+        }
+    }
+    // series end
+
+    // schedule start
+    .schedule{
+        h3{
+            font-size: 22px;
+        }
+
+        span{
+            font-size: 18px;
+            color: $bgSubColor;
+        }
+
+        figure{
+            @include FlexBox;
+            row-gap: 10px;
+
+            > div{
+                width: 50vh;
+                height: 50vh;
+                background-color: white;
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        figcaption{
+            @include FlexBox;
+            row-gap: 10px;
+        }
+    }
+
+    .schedule-body{
+        @include FlexBox;
+        row-gap: 30px;
+
+        p{
+            color: dimgray;
+        }
+    }
+    // schedule end
+
+    // news start
+    .news{
+        @include FlexBox;
+        row-gap: 20px;
+    }
+
+    .news-body{
+        > article{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 30px;
+        }
+
+        figure{
+            @include FlexBox;
+            row-gap: 30px;
+        }
+
+        figcaption{
+            @include FlexBox;
+            row-gap: 20px;
+        }
+
+        span{
+            font-size: 18px;
+            color: $bgSubColor;
+        }
+
+        p{
+            color: dimgray;
+        }
+
+        a{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+            background-color: $bgBtnColor;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 2px solid $bgBtnColor;
+            transition: .4s;
+
+            &:hover{
+                border: 2px solid $bgBtnColor;
+                background-color: $bgColor;
+                color: $bgBtnColor;
+                transition: .4s;
+            }
+        }
+
+        > article{
+            &:last-child{
+                padding-top: 10%;
+            }
+        }
+
+        [value="view more articles"]{
+            width: fit-content;
+            padding: 5%;
+            color: white;
+            font-weight: 600;
+            background-color: $bgSubColor;
+            border: 2px solid $bgSubColor;
+            border-radius: 5px;
+            transition: .4s;
+            text-transform: uppercase;
+
+
+            &:hover{
+                border: 2px solid $bgSubColor;
+                background-color: $bgColor;
+                color: $bgSubColor;
+                transition: .4s;
+            }
+        }
+        
+    }
+    // news end
+
+    // contact start
+    .contact{
+        @include FlexBox;
+        row-gap: 5vh;
+        background-color: $bgBtnColor;
+        
+        > article:first-child{
+          background-color: $bgColor;
+          padding: 5%;
+          @include FlexBox;
+          text-align: center;
+          row-gap: 3vh;
+    
+          h2{
+            padding-top: 3%;
+            margin: 0;
+            font-size: 21px;
+            color: $bgMainColor;
+            font-weight: 600;
+          }
+    
+          p{
+            margin: 0;
+            padding-bottom: 3%;
+            color: #555;
+          }
+        }
+    
+        > article:last-child{
+          @include FlexBox;
+          row-gap: 10vh;
+          background-color: $bgBtnColor;
+          padding: 10%;
+        }
+    
+        section{
+          @include FlexBox;
+          row-gap: 2vh;
+          align-items: center;
+          justify-content: center;
+    
+          form{
+            width: 100%;
+            @include FlexBox;
+            row-gap: 3vh;
+            align-items: flex-end;
+          }
+    
+          input, textarea{
+            width: 100%;
+            padding: 2%;
+            border-radius: 0;
+            border: none;
+            border-bottom: 2px solid white;
+            background-color: $bgBtnColor;
+    
+            &::placeholder{
+              color: white;
+            }
+          }
+    
+          textarea{
+            height: 30vh;
+          }
+    
+          [type="submit"]{
+            width: 60%;
+            background-color: $bgColor;
+            color: $bgBtnColor;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10px;
+            padding: 3% 1%;
+            font-weight: 600;
+          }
+    
+          h3{
+            margin: 0;
+            color: white;
+            text-transform: uppercase;
+          }
+    
+          address, a{
+            margin: 0;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+    // contact end
+
+}
