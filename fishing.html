@@ -8,40 +8,42 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-  <link rel="stylesheet" href="./css/fishing.css">
+  <link rel="stylesheet" href="/css/fishing.css">
 
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cycling.html">Cycling</a></li>
-        <li><a href="#">Fishing</a></li>
-        <li><a href="workout.html">Workout</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <a href="./index.html">hobbies</a>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#machines">machines</a></li>
+      <li><a href="#testimonial">testimonial</a></li>
+      <li><a href="#gallery">gallery</a></li>
+      <li><a href="#contact">contact us</a></li>
+    </ul>
     <details>
-      <summary class="fa-solid fa-bars"></summary>
+      <summary><i class="fa-solid fa-bars"></i></summary>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cycling.html">Cycling</a></li>
-        <li><a href="#">Fishing</a></li>
-        <li><a href="workout.html">Workout</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#machines">machines</a></li>
+        <li><a href="#testimonial">testimonial</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#contact">contact us</a></li>
       </ul>
     </details>
-    <article>
-      <aside class="fa-solid fa-fishing-rod"></aside>
-      <h1> 
-        fishing
-      </h1>
-      <p>
-        - My hobby -
-      </p>
-    </article>
+  </nav>
+  <!-- HEADER -->
+  <header>
+    <section>
+      <h2>Fitness is fun with us</h2>
+      <p>build perfect body with clean mind</p>
+      <a href="#about">Learn More</a>
+    </section>
   </header>
+
   <main>
-    <nav>
+    <nav class="fishing-nav">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#style">Fishing Style</a></li>
@@ -50,6 +52,7 @@
         <li><a href="#news">News</a></li>
       </ul>
     </nav>
+
     <section class="about" id="about">
       <article class="tytle-section">
         <h2>
@@ -70,6 +73,7 @@
         </figure>
       </article>
     </section>
+    
     <section class="style" id="style">
       <article class="tytle-section">
         <h2>
@@ -85,9 +89,10 @@
             <img src="./img/fishing/shore.jpg" alt="Shore">
             <h3>salt water lure</h3>
           </aside>
-          <figcaption>
-            <h3>salt water lure (shore)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure voluptas amet sed adipisci accusantium earum eum tempora, asperiores laboriosam eveniet repellat obcaecati. Ipsum, quibusdam?</p>
+          <figcaption id="style-01">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure voluptas amet sed adipisci accusantium earum eum tempora, asperiores laboriosam eveniet repellat obcaecati. Ipsum, quibusdam?
+            </p>
           </figcaption>
         </figure>
         <figure>
@@ -172,7 +177,9 @@
         </figure>
       </article>
     </section>
+
     <section class="how-to" id="how-to">
+
       <article class="tytle-section">
         <h2>
           how to fishing
@@ -181,13 +188,14 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestias explicabo harum. Rerum, odio laborum.
         </p>
       </article>
-      <article>
+
+      <article class="tools">
         <h3>
           tools
         </h3>
         <section>
           <figure>
-            <img src="" alt="">
+            <img src="./img/fishing/rod.jpg" alt="Rod">
             <figcaption>
               <h4>
                 fishing rod
@@ -195,7 +203,7 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="" alt="">
+            <img src="./img/fishing/reel.png" alt="Reel">
             <figcaption>
               <h4>
                 reel
@@ -203,7 +211,7 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="" alt="">
+            <img src="./img/fishing/hook.jpg" alt="Hook">
             <figcaption>
               <h4>
                 fishing line & hook 
@@ -211,7 +219,7 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="" alt="">
+            <img src="./img/fishing/bait.jpg" alt="Bait">
             <figcaption>
               <h4>
                 bait
@@ -219,8 +227,7 @@
             </figcaption>
           </figure>
           <figure>
-          <figure>
-            <img src="" alt="">
+            <img src="./img/fishing/lure.jpg" alt="Lure">
             <figcaption>
               <h4>
                  lure
@@ -228,137 +235,67 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="" alt="">
+            <img src="./img/fishing/life-jackets.jpg" alt="Life-jacket">
             <figcaption>
               <h4>
                 life jacket
               </h4>
             </figcaption>
           </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                scissors
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                pliers
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                bucket
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                towel
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                cooler
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                ice
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                foods
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                cap
-              </h4>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <h4>
-                sunglasses
-              </h4>
-            </figcaption>
-          </figure>
-        </section>
+        </secion>  
       </article>
-      <article>
-        <h2>
-          attention
-        </h2>
-        <section>
-          <article>
+
+      <article class="attention">
+          <h3>
+            attention
+          </h3>
+          <section>
             <div>
-              <h5>Must wear a life jacket</h5>
+              <h5>Must wear a life jacket
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </article>
-          <article>
             <div>
-              <h5>Must see around you</h5>
+              <h5>Must see around you
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </article>
-          <article>
             <div>
-              <h5>Shouldn't catch fishes by your hands</h5>
+              <h5>Shouldn't catch fishes by your hands
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </article>
-          <article>
             <div>
-              <h5>Must pay attention foadcast</h5>
+              <h5>Must pay attention foadcast
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </article>
-          <article>
             <div>
-              <h5>To keep fishing place</h5>
+              <h5>To keep fishing place
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </article>
-          <article>
             <div>
-              <h5>To avoid disturbing others</h5>
+              <h5>To avoid disturbing others
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </article>
-          <article>
             <div>
-              <h5>Must release small fishes</h5>
+              <h5>Must release small fishes
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </h5>
               <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </article>
-        </section>
+            </div>      
+          </section>
       </article>
     </section>
+
     <section class="pictures" id="pictures">
       <article class="tytle-section">
         <h2>
@@ -434,25 +371,32 @@
         </p>
       </article>
       <article>
-        <h3>news</h3>
-        <section>
+        <div>
           <time>2022/07/12</time>
           <a href="#">Ottawa issues rreminder and warning about First Nations fishing ringhts</a>
-        </section>
-        <section>
+        </div>
+        <div>
           <time>2022/07/05</time>
           <a href="#">Province commits $1M in support of Manitoba fish and wildlife</a>
-        </section>
-        <section>
+        </div>
+        <div>
           <time>2022/06/30</time>
           <a href="#">'Newbies' hook 700-pound sturgeon on B.C. catch-and release fishing trip
           </a>
-        </section>
+        </div>
       </article>
     </section>
   </main>
   <footer>
-
+    <ul>
+      <li><a href="#" class="fa-brands fa-instagram"></a></li>
+      <li><a href="#" class="fa-brands fa-facebook"></a></li>
+      <li><a href="#" class="fa-brands fa-youtube"></a></li>
+      <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
+      <li><a href="#" class="fa-brands fa-google"></a></li>
+    </ul>
+    <p>This Website is made for portfolio of East Asian Guys.</p>
+    <p>&copy; 2022 Hobbies / All rights reserved.</p>
   </footer>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

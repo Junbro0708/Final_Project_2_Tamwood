@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  align-items: unset;
+}
+
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  align-items: unset;
+  row-gap: 10vh;
+}
+main > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  align-items: unset;
+  background-color: #F6E3C5;
+  padding: 10% 5%;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #6CC4A1;
+  font-weight: 600;
+}
+
+h3, h4 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 300px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gainsboro;
+    z-index: 1;
+    position: fixed;
+  }
+  nav > a {
+    text-transform: uppercase;
+    font-family: "Libre Baskerville", serif;
+    font-size: 28px;
+    margin: 0;
+    color: #6CC4A1;
+    letter-spacing: -1px;
+  }
+  nav > a:hover {
+    color: #6CC4A1;
+  }
+  nav > ul {
+    display: none;
+  }
+  details {
+    position: relative;
+    text-align: right;
+    width: 50%;
+  }
+  details > summary {
+    list-style: none;
+  }
+  details > summary i {
+    font-size: 28px;
+    color: #6CC4A1;
+  }
+  details > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    position: absolute;
+    top: 160%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  details li {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    background-color: rgba(108, 196, 161, 0.9);
+  }
+  details li:last-child a {
+    border-bottom: none;
+  }
+  details a {
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 3% 5%;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  details a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  header {
+    background-image: url("/img/fishing/bg-header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45vh;
+  }
+  header section {
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.3);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  header section h2 {
+    margin: 0;
+    padding-top: 7vh;
+    color: whitesmoke;
+    font-size: 28px;
+    text-transform: capitalize;
+  }
+  header section p {
+    margin: 0;
+    color: #6CC4A1;
+    text-transform: capitalize;
+    padding-top: 0.5vh;
+    padding-bottom: 5vh;
+  }
+  header section a {
+    background-color: #4CACBC;
+    color: white;
+    padding: 2% 4%;
+    border-radius: 10px;
+  }
+  header section a:hover {
+    color: white;
+  }
+  main {
+    padding-bottom: 10vh;
+  }
+  main > nav {
+    display: none;
+  }
+  main > section {
+    row-gap: 5vh;
+  }
+  p {
+    font-size: 20px;
+    color: gray;
+  }
+  img {
+    width: 100%;
+    height: 30vh;
+  }
+  .tytle-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+    width: 100%;
+    row-gap: 3vh;
+  }
+  .tytle-section h2 {
+    text-align: center;
+  }
+  .tytle-section p {
+    text-align: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    row-gap: 5vh;
+  }
+  .about > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 5vh;
+  }
+  .about > article:last-child img {
+    width: 100%;
+  }
+  .about > article:last-child p {
+    text-align: justify;
+  }
+  .style {
+    width: 100%;
+  }
+  .style > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    width: 100%;
+  }
+  .style figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 2vh;
+    padding: 2vh;
+    border: 1px solid gray;
+    row-gap: 0;
+    width: 100%;
+  }
+  .style figure aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  .style figure figcaption {
+    display: none;
+  }
+  .style img {
+    position: relative;
+    height: 30vh;
+  }
+  .style h3 {
+    position: absolute;
+    color: white;
+    padding: 1%;
+    background-color: rgba(80, 80, 80, 0.3);
+  }
+  .how-to h3 {
+    background-color: #6CC4A1;
+    border-radius: 15px;
+    width: 50%;
+    padding: 2vh;
+    text-align: center;
+  }
+  .how-to figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 3vh;
+    align-items: center;
+  }
+  .how-to figure > img {
+    width: 100%;
+  }
+  .how-to figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    width: 100%;
+  }
+  .how-to figure h4 {
+    text-align: center;
+    width: 100%;
+    padding: 1vh;
+    border-radius: 15px;
+    width: 70%;
+    margin: 0;
+    background-color: #A0D995;
+  }
+  .how-to .tools, .how-to .attention {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    row-gap: 2vh;
+    width: 100%;
+  }
+  .how-to .attention > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .how-to div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    text-align: center;
+    border: 1px dashed red;
+    background-color: #A0D995;
+  }
+  .how-to h5 {
+    font-size: 20px;
+    color: red;
+    background-color: yellow;
+    width: 100%;
+  }
+  .carousel-indicators {
+    z-index: 0;
+  }
+  .carousel-item {
+    height: 80vh;
+  }
+  .carousel-item:first-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+  }
+  .carousel-item:first-child > img {
+    width: 100%;
+    height: 30vh;
+  }
+  .carousel-item:nth-child(2) > img {
+    width: 100%;
+    height: 70vh;
+  }
+  .carousel-item:nth-child(3) > img {
+    width: 100%;
+    height: 70vh;
+  }
+  .carousel-item:nth-child(4) > img {
+    width: 100%;
+    height: 70vh;
+  }
+  .carousel-item:last-child > img {
+    width: 100%;
+    height: 70vh;
+  }
+  .news > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    border: 1px solid gray;
+  }
+  .news div {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    border-bottom: 1px solid gray;
+    align-items: center;
+  }
+  .news time {
+    padding: 1vh;
+  }
+  .news a {
+    padding: 1vh;
+    text-decoration: underline;
+  }
+  footer {
+    background-color: white;
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    row-gap: 0.5vh;
+  }
+  footer ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  footer a {
+    font-size: 24px;
+    color: #6CC4A1;
+  }
+  footer p {
+    margin: 0;
+    color: #6CC4A1;
+    font-size: 14px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=fishing.css.map */
