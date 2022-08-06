@@ -1,0 +1,218 @@
+@media (min-width: 1000px) {
+  nav{
+    padding: 0.5% 3%;
+
+    > a{
+      font-size: 28px;
+    }
+
+    > ul{
+      display: flex;
+      width: 45%;
+      padding: 0;
+      padding-right: 3%;
+
+      li{
+        list-style: none;
+      }
+
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+
+  details{
+    display: none;
+  }
+  
+    // HEADER
+  header{
+      height: 60vh;
+      section{
+        p{
+          padding-bottom: 9vh;
+        }
+  
+        a{
+          padding: .8% 1.6%;
+          border-radius: 20px;
+          transition: .4s;
+  
+          &:hover{
+            background-color: $bgMainColor;
+          }
+        }
+      }
+  }
+  
+
+  .about {
+
+      > article:last-child {
+
+          figure {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              row-gap: 0;
+              justify-content: space-between;
+              column-gap: 2vh;
+              align-items: center;
+
+          }
+
+          img {
+              width: 50%;
+              height: 60vh;
+              float: left;
+          }
+
+          figcaption {
+              @include flexBox;
+              justify-content: center;
+              padding-left: 3%;
+              padding-right: 3%;
+              border: 1px solid gray;
+              border-radius: 15px;
+              height: 60vh;
+          }
+
+          p {
+              margin: 0; 
+          }
+      }
+  }  
+    
+  .style {
+
+      img {
+          height: 40vh;
+      }
+  }
+
+  
+  
+  .tools {
+
+      figure {
+          width: 30%;
+      }
+
+      img {
+          width: 100%;
+      }
+  }  
+
+  .pictures {
+      @include flexBox;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #carouselExampleDark {
+      height: 80vh;
+  }
+
+  .carousel-item {
+      width: 100%;
+  }
+
+  .carousel-item:first-child {
+
+      padding-left: 30vh;
+      padding-right: 30vh;
+
+      > img {
+          width: 100%;
+          height: 35vh;
+      }
+  }
+
+  .carousel-item:nth-child(2) {
+
+      > img {
+          width: 30vh;
+          height: 75%;
+      }
+      
+  }
+
+  .carousel-item:nth-child(3) {
+
+      > img {
+          width: 30vh;
+          height: 75%;
+      }
+      
+  }
+
+  .carousel-item:nth-child(4) {
+
+      > img {
+          width: 30vh;
+          height: 75%;
+      }
+      
+  }
+
+  .carousel-item:last-child {
+
+      > img {
+          width: 30vh;
+          height: 75%;
+      }
+  }
+
+  .carousel-caption {
+
+      h5 {
+          color: $bgBtnColor;
+      }
+  }
+
+  .carousel-control-prev {
+      @include flexBox;
+      justify-content: center;
+  }
+
+  .news {
+
+      > article:last-child {
+          @include flexBox;
+          border: 1px solid gray;
+      }
+
+      time {
+          width: 20%;
+          text-align: center;
+      }
+
+      a {
+          width: 80%;
+          text-align: center;
+      }
+  }
+
+  footer{
+    padding: 2% 1%;
+
+    ul{
+      width: 30%;
+      padding: 1%;
+      padding-top: 0;
+
+      li{
+        list-style: none;
+      }
+
+      a{
+        transition: .3s;
+
+        &:hover{
+          color: $bgBtnColor;
+        }
+      }
+    }
+  }
+}

@@ -147,35 +147,6 @@
         }
     }
     
-    footer{
-        background-color: white;
-        padding: 5% 3%;
-        @include FlexBox;
-        align-items: center;
-        row-gap: .5vh;
-    
-        ul{
-          display: flex;
-          width: 60%;
-          justify-content: space-between;
-          margin: 0;
-          padding: 0;
-          padding-top: 3%;
-          padding-bottom: 5%;
-        }
-    
-        a{
-          font-size: 24px;
-          color: $bgMainColor;
-        }
-    
-        p{
-          margin: 0;
-          color: $bgMainColor;
-          font-size: 14px;
-          text-align: center;
-        }
-      }
 
     img{
         width: 100%;
@@ -503,5 +474,35 @@
         }
       }
     // contact end
+
+    footer{
+        background-color: white;
+        padding: 5% 3%;
+        @include FlexBox;
+        align-items: center;
+        row-gap: .5vh;
+    
+        ul{
+          display: flex;
+          width: 60%;
+          justify-content: space-between;
+          margin: 0;
+          padding: 0;
+          padding-top: 3%;
+          padding-bottom: 5%;
+        }
+    
+        a{
+          font-size: 24px;
+          color: $bgMainColor;
+        }
+    
+        p{
+          margin: 0;
+          color: $bgMainColor;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
 
 }

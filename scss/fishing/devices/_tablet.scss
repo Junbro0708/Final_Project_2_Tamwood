@@ -1,0 +1,155 @@
+@media (min-width: 700px) {
+  // NAVIGATION
+  nav{
+    > a{
+      font-size: 40px;
+    }
+
+    > ul{
+      width: 50%;
+      display: none;
+      justify-content: space-between;
+      margin: 0;
+
+      a{
+        text-transform: uppercase;
+        color: $bgMainColor;
+
+        &:hover{
+          color: $bgMainColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  details{
+    display: block;
+
+    > summary{
+      i{
+        font-size: 40px;
+      }
+    }
+
+    > ul{
+      top: 187%;
+    }
+  }
+  
+    // HEADER
+    header{
+      section{
+        h2{
+          font-size: 40px;
+          font-family: $FontFamily_L;
+          text-transform: none;
+          letter-spacing: .5px;
+        }
+  
+        p{
+          font-size: 21px;
+          padding-bottom: 4vh;
+        }
+  
+        a{
+          font-size: 18px;
+          padding: 1% 2%;
+        }
+      }
+    }
+
+  p {
+      font-size: 25px;
+  }
+
+  .about {
+      img {
+          height: 40vh;
+      }
+  }
+
+  .style {
+
+      article:last-child {
+
+          > figure {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              column-gap: 2vh;
+          }
+
+          aside {
+              width: 60%;
+          }
+
+          figcaption {
+              @include flexBox;
+              width: 40%;
+              justify-content: center;
+              border: 1px solid gray;
+              padding-left: 2%;
+              padding-right: 2%;
+              border-radius: 15px;
+
+              > p {
+                  margin: 0;
+              }
+          }
+
+      }
+  }
+
+  .how-to {
+
+      h3 {
+          font-size: 40px;
+          padding: 3% 1%;
+      }
+  }
+
+  .tools {
+
+    > section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    figure {
+        width: 48%;
+        align-items: unset;
+    }
+}
+
+.carousel-caption {
+
+  h5 {
+      color: $bgBtnColor;
+      text-transform: capitalize;
+  }
+}
+
+.attention {
+
+    h5 {
+        font-size: 30px;
+        padding: 1vh;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+  .news {
+
+      time, a {
+          font-size: 20px;
+      }
+  }
+}

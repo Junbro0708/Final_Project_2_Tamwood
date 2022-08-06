@@ -3,11 +3,11 @@
         padding: 0.5% 3%;
 
         > a{
-            font-size: 40px;
+            font-size: 28px;
         }
     
         > ul{
-            width: 70%;
+            width: 65%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -17,15 +17,13 @@
             li{
                 width: 100%;
                 display: flex;
-                align-items: center;
+                justify-content: center;
                 height: 100%;
             }
     
             a{
-                font-size: 20px;
+                font-size: 16px;
                 padding: 5%;
-                width: 100%;
-                height: 100%;
                 text-transform: uppercase;
                 text-align: center;
                 color: $bgMainColor;
@@ -63,20 +61,6 @@
         > section{
             padding-top: 5%;
             padding-bottom: 5%;
-        }
-    }
-
-    footer{
-        padding: 1% 3%;
-
-        ul{
-            width: 25%;
-            padding-top: 3%;
-            padding-bottom: 3%;
-
-            a{
-                font-size: 55px;
-            }
         }
     }
 
@@ -206,5 +190,5 @@
             }
           }
         }
-    }
+      }
 }
