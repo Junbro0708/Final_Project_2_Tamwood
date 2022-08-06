@@ -425,6 +425,7 @@ li {
   }
   .about > figure {
     flex-direction: row;
+    align-items: center;
   }
   .about > figure aside {
     width: 50%;
