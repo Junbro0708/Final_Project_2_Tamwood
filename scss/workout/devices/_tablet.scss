@@ -1,17 +1,15 @@
 @media (min-width: 700px){
   // NAVIGATION
   nav{
-
     > a{
       font-size: 40px;
     }
 
     > ul{
-      width: 65%;
-      display: flex;
+      width: 50%;
+      display: none;
       justify-content: space-between;
       margin: 0;
-      padding: 0;
 
       a{
         text-transform: uppercase;
@@ -26,9 +24,18 @@
   }
 
   details{
-    display: none;
-  }
+    display: block;
 
+    > summary{
+      i{
+        font-size: 40px;
+      }
+    }
+
+    > ul{
+      top: 187%;
+    }
+  }
   // HEADER
   header{
     section{

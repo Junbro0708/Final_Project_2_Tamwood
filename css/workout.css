@@ -663,11 +663,10 @@ li {
     font-size: 40px;
   }
   nav > ul {
-    width: 65%;
-    display: flex;
+    width: 50%;
+    display: none;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
   }
   nav > ul a {
     text-transform: uppercase;
@@ -678,7 +677,13 @@ li {
     text-decoration: underline;
   }
   details {
-    display: none;
+    display: block;
+  }
+  details > summary i {
+    font-size: 40px;
+  }
+  details > ul {
+    top: 187%;
   }
   header section h2 {
     font-size: 40px;
@@ -834,12 +839,16 @@ li {
     font-size: 28px;
   }
   nav > ul {
+    display: flex;
     width: 45%;
     padding: 0;
     padding-right: 3%;
   }
   nav > ul a {
     font-size: 16px;
+  }
+  details {
+    display: none;
   }
   header {
     height: 60vh;
