@@ -1,0 +1,169 @@
+@media (min-width: 1000px){
+  nav{
+    padding: 0.5% 3%;
+
+    > a{
+      font-size: 28px;
+    }
+
+    > ul{
+      display: flex;
+      width: 30%;
+      padding: 0;
+      padding-right: 3%;
+
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+
+  details{
+    display: none;
+  }
+  
+  header{
+    .carousel-inner{
+      height: 60vh;
+
+      aside{
+        height: 60vh;
+      }
+    }
+  }
+
+  .text-hd{
+    height: 60vh;
+    margin-top: 5vh;
+    padding-top: 1.5%;
+    justify-content: space-between;
+
+    > article{
+      padding-left: 0;
+      padding-right: 0;
+
+      p{
+        width: 65%;
+      }
+
+      a{
+        padding: 1% 3%;
+        border-radius: 20px;
+        transition: .3s;
+
+        &:hover{
+          background-color: $bgMainColor;
+        }
+      }
+    }
+  }
+
+  .about{
+    > figure{
+      height: 100%;
+
+      aside{
+        width: 40%;
+        height: 50vh;
+      }
+
+      figcaption{
+        width: 60%;
+        align-items: center;
+      }
+
+      h2{
+        width: 80%;
+      }
+
+      p{
+        width: 70%;
+      }
+    }
+  }
+
+  .hobbies{
+    article{
+      aside{
+        width: 35%;
+        height: 35vh;
+        margin: 0;
+      }
+
+      h2{
+        font-weight: 200;
+        font-size: 36px;
+      }
+
+      a{
+        margin-top: 18.5%;
+        top: unset !important;
+        left: 20%;
+      }
+
+      p{
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+
+    .cycling, .fishing, .workout{
+      height: 50vh;
+
+      section{
+        height: 50vh;
+        padding: 3% 5%;
+      }
+    }
+
+    .card-body{
+      position: relative;
+
+      a{
+        position: absolute;
+        width: fit-content;
+        right: 3%;
+        bottom: 5%;
+        left: unset;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .faqs{
+    > article:first-child{
+      align-items: center;
+      
+      p{
+        width: 70%;
+      }
+    }
+
+    .accordion-button{
+      padding: 3% 1.5%;
+      font-size: 18px;
+      color: #555;
+      font-weight: 600;
+    }
+  }
+
+  footer{
+    padding: 2% 1%;
+
+    ul{
+      width: 40%;
+      padding: 1%;
+
+      a{
+        transition: .3s;
+
+        &:hover{
+          color: $bgBtnColor;
+        }
+      }
+    }
+  }
+}

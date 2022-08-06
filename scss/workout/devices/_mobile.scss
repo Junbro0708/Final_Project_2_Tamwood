@@ -1,0 +1,604 @@
+@media (min-width: 300px){
+  // NAVIGATION
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gainsboro;
+    z-index: 1;
+    position: fixed;
+
+    > a{
+      text-transform: uppercase;
+      font-family: $FontFamily_L;
+      font-size: 28px;
+      margin: 0;
+      color: $bgMainColor;
+      letter-spacing: -1px;
+
+      &:hover{
+        color: $bgMainColor;
+      }
+    }
+
+    > ul{
+      display: none;
+    }
+  }
+
+  details{
+    position: relative;
+    text-align: right;
+    width: 50%;
+
+    > summary{
+      list-style: none;
+
+      i{
+        font-size: 28px;
+        color: $bgMainColor;
+      }
+    }
+
+    > ul{
+      @include FlexBox;
+      position: absolute;
+      top: 160%;
+      width: 100%;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    li{
+      display: flex;
+      width: 100%;
+      list-style: none;
+      background-color: rgba($color: $bgMainColor, $alpha: 0.9);
+
+      &:last-child a{
+        border-bottom: none;
+      }
+    }
+
+    a{
+      width: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      padding: 3% 5%;
+      border-bottom: 1px solid white;
+      letter-spacing: 0.5px;
+      font-size: 18px;
+      font-weight: 100;
+
+      &:hover{
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // HEADER
+  header{
+    background-image: url("/img/workout/header_bg.jpg");
+    @include bgAttribute;
+    height: 45vh;
+
+    section{
+      height: 100%;
+      background-color: rgba($color: #333, $alpha: 0.3);
+      @include FlexBox;
+      justify-content: center;
+      align-items: center;
+
+      h2{
+        margin: 0;
+        padding-top: 7vh;
+        color: whitesmoke;
+        font-size: 28px;
+        text-transform: capitalize;
+      }
+
+      p{
+        margin: 0;
+        color: $bgMainColor;
+        text-transform: capitalize;
+        padding-top: 0.5vh;
+        padding-bottom: 5vh;
+      }
+
+      a{
+        background-color: $bgBtnColor;
+        color: white;
+        padding: 2% 4%;
+        border-radius: 10px;
+
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+
+  // MAIN
+  .about{
+    background-color: $bgColor;
+
+    > article:nth-child(2){
+      padding: 5%;
+      @include FlexBox;
+      text-align: center;
+      row-gap: 3vh;
+
+      h2{
+        margin: 0;
+        font-size: 21px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      p{
+        margin: 0;
+        padding-bottom: 3%;
+        color: #555;
+      }
+    }
+  }
+
+  .carousel-inner{
+    @for $i from 1 through 5{
+      figure:nth-child(#{$i}){
+        aside{
+          background-image: url("/img/workout/about0#{$i}.jpg");
+          @include bgAttribute;
+          width: 100%;
+          height: 30vh;
+        }
+      }
+    }
+  }
+
+  .machines{
+    @include FlexBox;
+    row-gap: 5vh;
+    
+    > article:first-child{
+      background-color: $bgColor;
+      padding: 5%;
+      @include FlexBox;
+      text-align: center;
+      row-gap: 3vh;
+
+      h2{
+        padding-top: 3%;
+        margin: 0;
+        font-size: 21px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      p{
+        margin: 0;
+        padding-bottom: 3%;
+        color: #555;
+      }
+    }
+
+    > article:last-child{
+      @include FlexBox;
+      justify-content: center;
+      align-items: center;
+      row-gap: 5vh;
+
+      figure{
+        width: 100%;
+        margin: 0;
+        @include FlexBox;
+        row-gap: 3vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a{
+        background-color: $bgBtnColor;
+        color: white;
+        padding: 2% 4%;
+        border-radius: 10px;
+
+        &:hover{
+          color: white;
+        }
+      }
+    }
+
+    @for $i from 1 through 4{
+      figure:nth-child(#{$i}){
+        aside{
+          background-image: url("/img/workout/machine0#{$i}.jpg");
+          @include bgAttribute;
+          width: 90%;
+          height: 30vh;
+          border-radius: 20px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+      }
+    }
+  }
+
+  .testimonial{
+    @include FlexBox;
+    row-gap: 5vh;
+    
+    > article:first-child{
+      background-color: $bgColor;
+      padding: 5%;
+      @include FlexBox;
+      text-align: center;
+      row-gap: 3vh;
+
+      h2{
+        padding-top: 3%;
+        margin: 0;
+        font-size: 21px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      p{
+        margin: 0;
+        padding-bottom: 3%;
+        color: #555;
+      }
+    }
+
+    > article:last-child{
+      @include FlexBox;
+      justify-content: center;
+      align-items: center;
+      row-gap: 5vh;
+
+      .card{
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 20px;
+        border: none;
+      }
+
+      i, p, ul, h4{
+        margin: 0;
+        padding: 0;
+      }
+
+      i{
+        font-size: 45px;
+        color: $bgBtnColor;
+      }
+
+      p{
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+        padding: 3% 0;
+      }
+
+      ul{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+      }
+
+      a{
+        font-size: 30px;
+        color: $bgBtnColor;
+      }
+
+      h4{
+        font-size: 21px
+      }
+    }
+  }
+
+  .card{
+    &:nth-child(1){
+      div{
+        aside{
+          background-image: url("/img/workout/about03.jpg");
+        }
+      }
+    }
+    &:nth-child(2){
+      div{
+        aside{
+          background-image: url("/img/workout/about01.jpg");
+        }
+      }
+    }
+    &:nth-child(3){
+      div{
+        aside{
+          background-image: url("/img/workout/about04.jpg");
+        }
+      }
+    }
+  }
+
+  .card-body{
+    @include FlexBox;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+    row-gap: 3vh;
+
+    > div{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      column-gap: 2vh;
+
+      aside{
+        @include bgAttribute;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+      }
+
+      article{
+        @include FlexBox;
+      }
+    }
+  }
+
+  .modal-body{
+    @include FlexBox;
+    row-gap: 5vh;
+
+    .modal-container{
+      @include FlexBox;
+      row-gap: 3vh;
+    }
+
+    .modal-img{
+      width: 100%;
+      height: 30vh;
+    }
+
+    section{
+      @include FlexBox;
+      row-gap: 1vh;
+      align-items: center;
+    }
+  }
+
+  .chest01{
+    background-image: url("/img/workout/chest01.png");
+    @include bgAttribute;
+  }
+  .chest02{
+    background-image: url("/img/workout/chest02.png");
+    @include bgAttribute;
+  }
+  .chest03{
+    background-image: url("/img/workout/chest03.png");
+    @include bgAttribute;
+  }
+
+  .back01{
+    background-image: url("/img/workout/back01.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .back02{
+    background-image: url("/img/workout/back02.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .back03{
+    background-image: url("/img/workout/back03.png");
+    @include bgAttribute;
+  }
+
+  .small01{
+    background-image: url("/img/workout/small01.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .small02{
+    background-image: url("/img/workout/small02.png");
+    @include bgAttribute;
+    background-position: top;
+  }
+  .small03{
+    background-image: url("/img/workout/small03.png");
+    @include bgAttribute;
+  }
+
+  .leg01{
+    background-image: url("/img/workout/leg01.png");
+    @include bgAttribute;
+  }
+  .leg02{
+    background-image: url("/img/workout/leg02.png");
+    @include bgAttribute;
+  }
+  .leg03{
+    background-image: url("/img/workout/leg03.png");
+    @include bgAttribute;
+  }
+
+  .gallery{
+    @include FlexBox;
+    row-gap: 5vh;
+    
+    > article:first-child{
+      background-color: $bgColor;
+      padding: 5%;
+      @include FlexBox;
+      text-align: center;
+      row-gap: 3vh;
+
+      h2{
+        padding-top: 3%;
+        margin: 0;
+        font-size: 21px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      p{
+        margin: 0;
+        padding-bottom: 3%;
+        color: #555;
+      }
+    }
+
+    > article:last-child{
+      @include FlexBox;
+      row-gap: 3vh;
+      padding: 5%;
+
+      aside{
+        width: 100%;
+        padding-bottom: 100%;
+        @include bgAttribute;
+      }
+
+      @for $i from 1 through 6{
+        aside:nth-child(#{$i}){
+          background-image: url("/img/workout/gallery0#{$i}.jpg");
+        }
+      }
+    }
+  }
+
+  .contact{
+    @include FlexBox;
+    row-gap: 5vh;
+    
+    > article:first-child{
+      background-color: $bgColor;
+      padding: 5%;
+      @include FlexBox;
+      text-align: center;
+      row-gap: 3vh;
+
+      h2{
+        padding-top: 3%;
+        margin: 0;
+        font-size: 21px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      p{
+        margin: 0;
+        padding-bottom: 3%;
+        color: #555;
+      }
+    }
+
+    > article:last-child{
+      @include FlexBox;
+      row-gap: 10vh;
+      background-color: $bgBtnColor;
+      padding: 10%;
+    }
+
+    section{
+      @include FlexBox;
+      row-gap: 2vh;
+      align-items: center;
+      justify-content: center;
+
+      form{
+        width: 100%;
+        @include FlexBox;
+        row-gap: 3vh;
+        align-items: flex-end;
+      }
+
+      input, textarea{
+        width: 100%;
+        padding: 2%;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: $bgBtnColor;
+
+        &::placeholder{
+          color: white;
+        }
+      }
+
+      textarea{
+        height: 30vh;
+        resize: none;
+      }
+
+      [type="submit"]{
+        width: 45%;
+        background-color: $bgMainColor;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10px;
+        padding: 3% 1%;
+        font-weight: 600;
+      }
+
+      h3{
+        margin: 0;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      div{
+        @include FlexBox;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2vh;
+      }
+
+      address, a{
+        margin: 0;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+  }
+
+  // FOOTER
+  footer{
+    background-color: white;
+    padding: 5% 3%;
+    @include FlexBox;
+    align-items: center;
+    row-gap: .5vh;
+
+    ul{
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      padding-top: 3%;
+      padding-bottom: 5%;
+    }
+
+    a{
+      font-size: 24px;
+      color: $bgMainColor;
+    }
+
+    p{
+      margin: 0;
+      color: $bgMainColor;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

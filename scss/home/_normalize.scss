@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $FontFamily_O;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+main{
+  @include FlexBox;
+  padding-top: 5vh;
+  row-gap: 3vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+@keyframes rotate {
+  0%    {transform: rotate(0deg);}
+  100%  {transform: rotate(180deg);}
+}
+@keyframes re-rotate {
+  0%    {transform: rotate(180deg);}
+  100%  {transform: rotate(0deg);}
+}

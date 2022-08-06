@@ -1,0 +1,210 @@
+@media(min-width: 1000px){
+    nav{
+        padding: 0.5% 3%;
+
+        > a{
+            font-size: 40px;
+        }
+    
+        > ul{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            li{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+    
+            a{
+                font-size: 20px;
+                padding: 5%;
+                width: 100%;
+                height: 100%;
+                text-transform: uppercase;
+                text-align: center;
+                color: $bgMainColor;
+        
+                &:hover{
+                    color: $bgMainColor;
+                    background-color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+      }
+
+    details{
+        display: none;
+    }
+    
+
+    header{
+        height: 80vh;
+
+        > section{
+            padding-top: 10%;
+            h2{
+                font-size: 50px;
+            }
+
+            a{
+                padding: 1% 2%;
+            }
+        }
+    }
+
+    main{
+        > section{
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+
+    footer{
+        padding: 1% 3%;
+
+        ul{
+            width: 25%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+
+            a{
+                font-size: 55px;
+            }
+        }
+    }
+
+    .section-title{
+        h2{
+            font-size: 46px;
+        }
+
+    }
+
+    .series{
+        padding-top: 5%;
+
+        h3{
+            font-size: 24px;
+        }
+    }
+
+    .port-link{
+        aside{
+            font-size: 26px;
+        }
+    }
+
+    .schedule-body{
+
+        figure:nth-child(even){
+            flex-direction: row-reverse;
+        }
+
+        figure{
+            div{
+                width: 20%;
+            }
+        }
+
+        figcaption{
+            h3{
+                font-size: 35px;
+            }
+
+            span{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .gallery-body{
+        display: flex;        
+        column-gap: 20px;
+    }
+
+    .news{
+        row-gap: 60px;
+    }
+
+    .news-body{
+
+        figure{
+            width: 20%;
+        }
+
+        span{
+            height: 3vh;
+        }
+        
+        a{
+            width: 55%;
+            font-size: 18px;
+        }
+
+        p{
+            line-height: 2;
+        }
+
+        [value="view more articles"]{
+            padding: 1% 3%;
+        }
+    }
+
+    .contact{
+        article:first-child{
+            h2{
+                font-size: 46px;
+            }
+        }
+
+        h3{
+            font-size: 35px;
+        }
+
+        article:last-child{
+            flex-direction: row;
+            column-gap: 50px;
+            padding: 2% 10%;
+
+
+            section:first-child{
+                width: 50%;
+            }
+
+            section:last-child{
+                width: 55%;
+                align-items: flex-start;
+                justify-content: flex-start;
+                
+            }
+
+            address{
+                text-align: left;
+            }
+        }
+    }
+
+    footer{
+        padding: 2% 1%;
+    
+        ul{
+          width: 40%;
+          padding: 1%;
+    
+          a{
+            transition: .3s;
+    
+            &:hover{
+              color: $bgBtnColor;
+            }
+          }
+        }
+    }
+}

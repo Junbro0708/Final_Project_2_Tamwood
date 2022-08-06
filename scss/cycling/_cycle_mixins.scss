@@ -1,0 +1,10 @@
+@mixin FlexBox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin bgAttribute {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
