@@ -379,6 +379,7 @@ li {
     border: 2px solid #A0D995;
     border-radius: 5px;
     transition: 0.4s;
+    text-transform: uppercase;
   }
   .news-body [value="view more articles"]:hover {
     border: 2px solid #A0D995;
@@ -612,5 +613,144 @@ li {
   }
   .contact form [type=submit] {
     width: 35%;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    padding: 1% 5%;
+  }
+  nav > a {
+    font-size: 40px;
+  }
+  nav > ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  nav > ul a {
+    font-size: 20px;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #6CC4A1;
+  }
+  nav > ul a:hover {
+    background-color: #6CC4A1;
+    color: white;
+  }
+  details {
+    display: none;
+  }
+  header {
+    height: 80vh;
+  }
+  header > section {
+    padding-top: 10%;
+  }
+  header > section h2 {
+    font-size: 50px;
+  }
+  header > section a {
+    padding: 1% 2%;
+  }
+  main > section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  footer {
+    padding: 1% 3%;
+  }
+  footer ul {
+    width: 25%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  footer ul a {
+    font-size: 55px;
+  }
+  .section-title h2 {
+    font-size: 46px;
+  }
+  .series {
+    padding-top: 5%;
+  }
+  .series h3 {
+    font-size: 24px;
+  }
+  .port-link aside {
+    font-size: 26px;
+  }
+  .schedule-body figure:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .schedule-body figure div {
+    width: 20%;
+  }
+  .schedule-body figcaption h3 {
+    font-size: 35px;
+  }
+  .schedule-body figcaption span {
+    font-size: 25px;
+  }
+  .gallery-body {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .news {
+    row-gap: 60px;
+  }
+  .news-body figure {
+    width: 20%;
+  }
+  .news-body h3 {
+    height: 14vh;
+  }
+  .news-body span {
+    height: 3vh;
+  }
+  .news-body a {
+    width: 55%;
+  }
+  .news-body p {
+    height: 35vh;
+    line-height: 2;
+  }
+  .news-body [value="view more articles"] {
+    padding: 1% 3%;
+  }
+  .contact article:first-child h2 {
+    font-size: 46px;
+  }
+  .contact h3 {
+    font-size: 35px;
+  }
+  .contact article:last-child {
+    flex-direction: row;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    padding: 2% 10%;
+  }
+  .contact article:last-child section:first-child {
+    width: 50%;
+  }
+  .contact article:last-child section:last-child {
+    width: 55%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .contact article:last-child address {
+    text-align: left;
   }
 }/*# sourceMappingURL=cycling.css.map */
