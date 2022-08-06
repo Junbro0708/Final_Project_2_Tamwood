@@ -276,37 +276,7 @@ a {
     padding: 2vh;
     text-align: center;
   }
-  .how-to figure {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    align-items: unset;
-    row-gap: 2vh;
-    align-items: center;
-    margin: 0;
-  }
-  .how-to figure > img {
-    width: 100%;
-    border-radius: 15px;
-  }
-  .how-to figure > figcaption {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    align-items: unset;
-    align-items: center;
-    width: 100%;
-  }
-  .how-to figure h4 {
-    text-align: center;
-    width: 100%;
-    padding: 1vh;
-    border-radius: 15px;
-    width: 70%;
-    margin: 0;
-    background-color: #A0D995;
-  }
-  .how-to .tools, .how-to .attention {
+  .tools, .attention {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -315,14 +285,44 @@ a {
     row-gap: 3vh;
     width: 100%;
   }
-  .how-to .tools > section {
+  .tools > section {
     display: flex;
     flex-direction: column;
     row-gap: 0;
     align-items: unset;
     row-gap: 2vh;
   }
-  .how-to .attention > section {
+  .tools figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 2vh;
+    align-items: center;
+    margin: 0;
+  }
+  .tools img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .tools figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    width: 100%;
+  }
+  .tools h4 {
+    text-align: center;
+    width: 100%;
+    padding: 1vh;
+    border-radius: 15px;
+    width: 70%;
+    margin: 0;
+    background-color: #A0D995;
+  }
+  .attention > section {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -331,7 +331,7 @@ a {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .how-to div {
+  .attention div {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -341,7 +341,7 @@ a {
     border: 1px dashed red;
     background-color: #A0D995;
   }
-  .how-to h5 {
+  .attention h5 {
     font-size: 20px;
     color: red;
     background-color: yellow;
@@ -390,13 +390,19 @@ a {
          column-gap: 2vh;
     border-bottom: 1px solid gray;
     align-items: center;
+    background-color: white;
   }
   .news time {
     padding: 1vh;
+    border-right: 1px solid gray;
   }
   .news a {
     padding: 1vh;
     text-decoration: underline;
+  }
+  .news a:hover {
+    color: #A0D995;
+    transition: 1s;
   }
   footer {
     background-color: white;
@@ -429,6 +435,41 @@ a {
   }
 }
 @media (min-width: 700px) {
+  nav > a {
+    font-size: 40px;
+  }
+  nav > ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  nav > ul a {
+    text-transform: uppercase;
+    color: #6CC4A1;
+  }
+  nav > ul a:hover {
+    color: #6CC4A1;
+    text-decoration: underline;
+  }
+  details {
+    display: none;
+  }
+  header section h2 {
+    font-size: 40px;
+    font-family: "Libre Baskerville", serif;
+    text-transform: none;
+    letter-spacing: 0.5px;
+  }
+  header section p {
+    font-size: 21px;
+    padding-bottom: 4vh;
+  }
+  header section a {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
   p {
     font-size: 25px;
   }
@@ -465,25 +506,157 @@ a {
     font-size: 40px;
     padding: 3% 1%;
   }
-  .how-to .tools > section {
+  .tools > section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
   }
-  .how-to .tools figure {
+  .tools figure {
     width: 48%;
     align-items: unset;
   }
-  .how-to .attention h5 {
+  .attention h5 {
     font-size: 30px;
     padding: 1vh;
   }
-  .how-to .attention p {
+  .attention p {
     font-size: 25px;
   }
   .news time, .news a {
     font-size: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    padding: 0.5% 3%;
+  }
+  nav > a {
+    font-size: 28px;
+  }
+  nav > ul {
+    width: 45%;
+    padding: 0;
+    padding-right: 3%;
+  }
+  nav > ul a {
+    font-size: 16px;
+  }
+  header {
+    height: 60vh;
+  }
+  header section p {
+    padding-bottom: 9vh;
+  }
+  header section a {
+    padding: 0.8% 1.6%;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  header section a:hover {
+    background-color: #6CC4A1;
+  }
+  .about > article:last-child figure {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: space-between;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    align-items: center;
+  }
+  .about > article:last-child img {
+    width: 50%;
+    height: 60vh;
+    float: left;
+  }
+  .about > article:last-child figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 60vh;
+  }
+  .about > article:last-child p {
+    margin: 0;
+  }
+  .style img {
+    height: 40vh;
+  }
+  .tools figure {
+    width: 30%;
+  }
+  .tools img {
+    width: 100%;
+  }
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  #carouselExampleDark {
+    height: 80vh;
+  }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-item:first-child {
+    padding-left: 30vh;
+    padding-right: 30vh;
+  }
+  .carousel-item:first-child > img {
+    width: 100%;
+    height: 35vh;
+  }
+  .carousel-item:nth-child(2) > img {
+    width: 30vh;
+    height: 75%;
+  }
+  .carousel-item:nth-child(3) > img {
+    width: 30vh;
+    height: 75%;
+  }
+  .carousel-item:nth-child(4) > img {
+    width: 30vh;
+    height: 75%;
+  }
+  .carousel-item:last-child > img {
+    width: 30vh;
+    height: 75%;
+  }
+  .carousel-caption h5 {
+    color: #4CACBC;
+  }
+  .carousel-control-prev {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    justify-content: center;
+  }
+  .news > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    border: 1px solid gray;
+  }
+  .news time {
+    width: 20%;
+    text-align: center;
+  }
+  .news a {
+    width: 80%;
+    text-align: center;
   }
 }/*# sourceMappingURL=fishing.css.map */

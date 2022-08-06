@@ -240,58 +240,57 @@
             padding: 2vh;
             text-align: center;
         }
+    }
+
+    .tools, .attention {
+        @include flexBox;
+        align-items: center;
+        row-gap: 3vh;
+        width: 100%;
+    }
+
+    .tools {
+        > section {
+            @include flexBox;
+            row-gap: 2vh;
+        }
 
         figure {
             @include flexBox;
             row-gap: 2vh;
             align-items: center;
             margin: 0;
-
-            > img {
-                width: 100%; 
-                border-radius: 15px
-            }
-
-            > figcaption {
-                @include flexBox;
-                align-items: center;
-                width: 100%;
-
-            }
-
-            h4 {
-                text-align: center;
-                width: 100%;
-                padding: 1vh;
-                border-radius: 15px;
-                width: 70%;
-                margin: 0;
-                background-color: $bgSubColor;
-            }
         }
 
-        .tools, .attention {
+        img {
+            width: 100%; 
+            border-radius: 15px
+        } 
+
+        figcaption {
             @include flexBox;
             align-items: center;
-            row-gap: 3vh;
             width: 100%;
-        }
+        }        
 
-        .tools {
-            > section {
-                @include flexBox;
-                row-gap: 2vh;
-            }
-            
+        h4 {
+            text-align: center;
+            width: 100%;
+            padding: 1vh;
+            border-radius: 15px;
+            width: 70%;
+            margin: 0;
+            background-color: $bgSubColor;
         }
+        
+    }
 
-        .attention {
-            > section {
-                @include flexBox;
-                row-gap: 5vh;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
+    .attention {
+        > section {
+            @include flexBox;
+            row-gap: 5vh;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         div {
@@ -307,8 +306,8 @@
             color: red;
             background-color: yellow;
             width: 100%;
-        } 
-    }
+        }
+    } 
 
     .carousel-indicators {
         z-index: 0;
@@ -377,15 +376,22 @@
             column-gap: 2vh;
             border-bottom: 1px solid gray;
             align-items: center;
+            background-color: white;
         }
 
         time {
             padding: 1vh;
+            border-right: 1px solid gray;
         }
 
         a {
             padding: 1vh;
             text-decoration: underline;
+
+            &:hover {
+                color: $bgSubColor;
+                transition: 1s;
+            }
         }
     }
 
@@ -417,5 +423,5 @@
           font-size: 14px;
           text-align: center;
         }
-      }
+    }
 }
