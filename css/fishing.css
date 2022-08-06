@@ -212,6 +212,13 @@ a {
     align-items: unset;
     row-gap: 5vh;
   }
+  .about > article:last-child figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 5vh;
+  }
   .about > article:last-child img {
     width: 100%;
   }

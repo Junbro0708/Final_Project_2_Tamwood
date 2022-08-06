@@ -173,6 +173,11 @@
             row-gap: 5vh;
             // width: 100%;
 
+            figure {
+                @include flexBox;
+                row-gap: 5vh;
+            }
+
             img {
                 width: 100%;
             }
