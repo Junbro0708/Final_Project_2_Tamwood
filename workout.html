@@ -5,8 +5,417 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hobbies</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/workout.css">
 </head>
 <body>
-  
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="./index.html">hobbies</a>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#machines">machines</a></li>
+      <li><a href="#testimonial">testimonial</a></li>
+      <li><a href="#gallery">gallery</a></li>
+      <li><a href="#contact">contact us</a></li>
+    </ul>
+    <details>
+      <summary><i class="fa-solid fa-bars"></i></summary>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#machines">machines</a></li>
+        <li><a href="#testimonial">testimonial</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#contact">contact us</a></li>
+      </ul>
+    </details>
+  </nav>
+  <!-- HEADER -->
+  <header>
+    <section>
+      <h2>Fitness is fun with us</h2>
+      <p>build perfect body with clean mind</p>
+      <a href="#about">Learn More</a>
+    </section>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <section class="about" id="about">
+      <article id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <section class="carousel-inner">
+          <figure class="carousel-item active">
+            <aside></aside>
+          </figure>
+          <figure class="carousel-item">
+            <aside></aside>
+          </figure>
+          <figure class="carousel-item">
+            <aside></aside>
+          </figure>
+          <figure class="carousel-item">
+            <aside></aside>
+          </figure>
+          <figure class="carousel-item">
+            <aside></aside>
+          </figure>
+        </section>
+      </article>
+      <article>
+        <h2>Workout is good for our health?</h2>
+        <p>
+          People who exercise regularly tend to do so because it gives them an enormous sense of well-being. They feel more energetic throughout the day, and feel more relaxed and positive about themselves.
+        </p>
+      </article>
+    </section>
+    <section class="machines" id="machines">
+      <article>
+        <h2>What kind of exercise equipment is this?</h2>
+        <p>
+          What different types of workouts should we be doing? We are here to help you reach your fitness goals. The below is a list of different types of exercise and their respective benefits.
+        </p>
+      </article>
+      <article>
+        <figure>
+          <aside></aside>
+          <!-- Button of Modal -->
+          <a data-bs-toggle="modal" data-bs-target="#modal1">
+            Learn More
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Chest Exercises</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-container">
+                    <div class="modal-img chest01"></div>
+                    <section>
+                      <h3>Bench Press (Dumbbell)</h3>
+                      <p>
+                        Lie back on a bench holding a dumbbell in each hand just to the sides of your shoulders. Your palms should be facing towards your feet in the starting position, although if you have shoulder issues then switch to a neutral grip, where the palms face each other.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img chest02"></div>
+                    <section>
+                      <h3>Bench Press (Barbell)</h3>
+                      <p>
+                        Lie flat on your back on a bench, and grip the bar with hands just wider than shoulder-width apart, so when you’re at the bottom of your move your hands are directly above your elbows. This allows for maximum force generation. Bring the bar slowly down to your chest as you breathe in. Push up as you breathe out, gripping the bar hard and watching a spot on the ceiling rather than the bar, so you can ensure it travels the same path every time.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img chest03"></div>
+                    <section>
+                      <h3>Dips</h3>
+                      <p>
+                        Grab the parallel bars and jump up, straighten your arms. Lower your body by bending your arms while leaning forward. Dip down until your shoulders are below your elbows.
+                        Lift your body up by straightening your arms. Lock your elbows at the top.
+                      </p>
+                    </section>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <aside></aside>
+          <!-- Button of Modal -->
+          <a data-bs-toggle="modal" data-bs-target="#modal2">
+            Learn More
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Back Exercise</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-container">
+                    <div class="modal-img back01"></div>
+                    <section>
+                      <h3>Lat pull down</h3>
+                      <p>
+                        Switch your grip on the bar so you’re holding it with your palms facing you and your hands shoulder-width apart. By changing to an underhand grip you recruit your biceps to help with the movement, which has the added benefit of taking some of the load off your lats if they are tiring towards the end of a back workout. Holding the bar with that underhand grip, pull it down to below chin height, keeping your chest up throughout. Pause at the bottom of the movement, then take the bar back up under control.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img back02"></div>
+                    <section>
+                      <h3>Barbell Rows</h3>
+                      <p>
+                        Most people tend not to consider their back very much until the day it lets them down and they’re forced to spend hours lying in agony on a wooden floor. There is a solution, however: placing greater emphasis on your back training. Step forward, the bent-over row. Even regular gym-goers will generally focus on more glamorous muscles and spurn the opportunity to address the stress and strain a deskbound lifestyle can place on your back. The problem? Your shoulders internally rotate, and this results in tight pecs and a stiff neck.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img back03"></div>
+                    <section>
+                      <h3>Cable Rows</h3>
+                      <p>
+                        The cable row is one of the best cable exercises around and very neatly demonstrates the edge this machine has over free weights, because throughout the row movement you work against the same level of resistance so the muscles enlisted by the exercise are worked evenly. Chief among these are your lats, but your rear delts and erector spinae are also targeted, along with your biceps and forearms.
+                      </p>
+                    </section>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <aside></aside>
+          <!-- Button of Modal -->
+          <a data-bs-toggle="modal" data-bs-target="#modal3">
+            Learn More
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">A small muscle workout</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-container">
+                    <div class="modal-img small01"></div>
+                    <section>
+                      <h3>Side Lateral Raise (Shoulder)</h3>
+                      <p>
+                        The side lateral raise is an effective shoulder-strengthening movement designed to isolate the lateral head of the deltoid muscle. Performed regularly, this can help you develop stronger, broader shoulders. All you need is a pair of light dumbbells and enough shoulder flexibility to abduct your arms (lifting the weights out and away from your body) until they form a "T" shape at your shoulders.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img small02"></div>
+                    <section>
+                      <h3>Bicep Curl</h3>
+                      <p>
+                        Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body. Your knees should stay slightly bent and your belly button should draw into the spine. Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle. And reverse the curl slowly and repeat.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img small03"></div>
+                    <section>
+                      <h3>Tricep Curl</h3>
+                      <p>
+                        Triceps curls are a strength-training exercise designed to build strength, definition, and stamina in the triceps. Triceps curls use a range of motion similar to lying triceps extensions. The triceps curl is a single-arm exercise that allows you to train one arm at a time. To perform triceps curls, stand with your feet shoulder-width apart, keeping your back straight. Lift a dumbbell over and behind your head. Squeeze the triceps muscle to slowly raise the dumbbell above your head and lower it back down to complete the range of motion.
+                      </p>
+                    </section>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <aside></aside>
+          <!-- Button of Modal -->
+          <a data-bs-toggle="modal" data-bs-target="#modal4">
+            Learn More
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Leg Exercise</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-container">
+                    <div class="modal-img leg01"></div>
+                    <section>
+                      <h3>Leg Press</h3>
+                      <p>
+                        Sit down on a leg press machine and place your legs on the platform in front of you. Your feet should be positioned approximately a foot to one and half feet apart. Lower the safety bars holding the platform in place. Press the platform all the way up until your legs are fully extended, without locking your knees. This is the starting position. As you inhale, slowly lower the platform until your upper and lower legs make a 90-degree angle. Push with the heels of your feet and use your quadriceps to go back to the starting position. Exhale as you do so. Repeat for the number of reps in your set. Make sure that the safety pins are locked properly once you have finished.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img leg02"></div>
+                    <section>
+                      <h3>Leg Curls</h3>
+                      <p>
+                        Lie face down on the lying leg curls machine, stretching your legs out fully. The roller pad should rest just above the heels, a few inches over your calves. Grasp the support handles on each side of the machine. Exhale and flex your knees, pulling your ankles as close to your buttocks as possible. Keep your hips firmly on the bench, and hold briefly. Inhale as you return your feet to the starting position in a slow and controlled movement.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="modal-container">
+                    <div class="modal-img leg03"></div>
+                    <section>
+                      <h3>Squat</h3>
+                      <p>
+                        Place a chair behind you and begin standing facing away from the chair, with both feet planted on the floor hip-width apart. Inhale and engage your core. Looking straight ahead, bend at both the hips and knees, ensuring that your knees remain in line with your toes. Continue bending, driving your hips back and bending your knees until you are able to lightly sit on the chair behind you, ensuring that you maintain a proud chest and avoid hunching throughout the movement. Exhale as you push through your heels to mid foot and extend your hips and knee simultaneously to return to the starting position. You should feel the tension in your glutes, quads and hamstrings.
+                      </p>
+                    </section>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </article>
+    </section>
+    <section class="testimonial" id="testimonial">
+      <article>
+        <h2>A word to those who start exercising</h2>
+        <p>
+          Have a read through the testimonials below for a few examples of how Rachel Doell and Daily Routine Fitness have positively impacted people’s lives and daily routines!
+        </p>
+      </article>
+      <article>
+        <section class="card">
+          <aside class="card-body">
+            <i class="card-title fa-solid fa-dumbbell"></i>
+            <p class="card-text">
+              I will have been training at Fitness Within 3 years December 2020. Since working out here I am stronger and in better shape than at any other time in my life. I find every class and every trainer are different but always super challenging, and this variety of workouts keeps me invested in maintaining a consistent motivation to show up and work hard.
+            </p>
+            <ul>
+              <li><a href="#" class="fa-brands fa-instagram"></a></li>
+              <li><a href="#" class="fa-brands fa-facebook"></a></li>
+              <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
+            </ul>
+            <div>
+              <aside></aside>
+              <article>
+                <h4>Tom Holland</h4>
+                <small>Owner of Anytime FC</small>
+              </article>
+            </div>
+          </aside>
+        </section>
+        <section class="card">
+          <aside class="card-body">
+            <i class="card-title fa-solid fa-baseball"></i>
+            <p class="card-text">
+              Fitness within is the cleanest and most organized gym I’ve ever seen! I have no words to say how wonderful they are! Domenic makes you feel super comfortable, Kaitlyn helps you eat better and healthy! Fitness Within has a team of excellence! They have a place for anyone, a plan for any goal, everything is very flexible!
+            </p>
+            <ul>
+              <li><a href="#" class="fa-brands fa-instagram"></a></li>
+              <li><a href="#" class="fa-brands fa-facebook"></a></li>
+              <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
+            </ul>
+            <div>
+              <aside></aside>
+              <article>
+                <h4>Andrew Garfield</h4>
+                <small>The winner of 12th competition</small>
+              </article>
+            </div>
+          </aside>
+        </section>
+        <section class="card">
+          <aside class="card-body">
+            <i class="card-title fa-solid fa-heart"></i>
+            <p class="card-text">
+              Since joining Fitness Within one year ago, I have become stronger and I have lost 38lbs.  The workouts are always different, hard and fun!  The trainers will push you harder than though you could go. When I joined, I also signed up for their HYBRID program.   I liked knowing you have someone there if you have questions and who is also going to hold you accountable.
+            </p>
+            <ul>
+              <li><a href="#" class="fa-brands fa-instagram"></a></li>
+              <li><a href="#" class="fa-brands fa-facebook"></a></li>
+              <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
+            </ul>
+            <div>
+              <aside></aside>
+              <article>
+                <h4>Nicole Kim</h4>
+                <small>Health Trainer of Fit4less</small>
+              </article>
+            </div>
+          </aside>
+        </section>
+      </article>
+    </section>
+    <section class="gallery" id="gallery">
+      <article>
+        <h2>You can be a healthy person, too.</h2>
+        <p>
+          There are so many picture for people who are working out. We want you to be motivated through healty person's photos.
+        </p>
+      </article>
+      <article>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+      </article>
+    </section>
+    <section class="contact" id="contact">
+      <article>
+        <h2>We want to help you with your exercise</h2>
+        <p>
+          This is the section that we can contact. If you have any questions or problems, just feel free to fill out this section!! Thank you for having a look our page : )
+        </p>
+      </article>
+      <article>
+        <section>
+          <h3>Contact Us</h3>
+          <form>
+            <input type="text" name="name" id="name" placeholder="Enter your name...">
+            <input type="email" name="email" id="email" placeholder="Enter your email...">
+            <textarea placeholder="Enter your message..."></textarea>
+            <input type="submit" value="Send Message" data-id="btn">
+          </form>
+        </section>
+        <section>
+          <div>
+            <h3>Address</h3>
+            <address>
+              #91/56 New Road Building, 7th Avenue, Vancouver British Columbia CA - B3M 8H7
+            </address>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p><a href="tel:+12332332323">+1 (233)233-2323</a></p>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@brando.ca">info@company.ca</a></p>
+          </div>
+        </section>
+    </article>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#" class="fa-brands fa-instagram"></a></li>
+      <li><a href="#" class="fa-brands fa-facebook"></a></li>
+      <li><a href="#" class="fa-brands fa-youtube"></a></li>
+      <li><a href="#" class="fa-brands fa-whatsapp"></a></li>
+      <li><a href="#" class="fa-brands fa-google"></a></li>
+    </ul>
+    <p>This Website is made for portfolio of East Asian Guys.</p>
+    <p>&copy; 2022 Hobbies / All rights reserved.</p>
+  </footer>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
