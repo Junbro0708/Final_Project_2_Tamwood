@@ -168,9 +168,6 @@ a {
   main {
     padding-bottom: 10vh;
   }
-  main > nav {
-    display: none;
-  }
   main > section {
     row-gap: 5vh;
   }
@@ -276,28 +273,7 @@ a {
     padding: 2vh;
     text-align: center;
   }
-  .how-to figure {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    align-items: unset;
-    row-gap: 2vh;
-    align-items: center;
-    margin: 0;
-  }
-  .how-to figure > img {
-    width: 100%;
-    border-radius: 15px;
-  }
-  .how-to figure > figcaption {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    align-items: unset;
-    align-items: center;
-    width: 100%;
-  }
-  .how-to figure h4 {
+  .how-to h4 {
     text-align: center;
     width: 100%;
     padding: 1vh;
@@ -306,7 +282,7 @@ a {
     margin: 0;
     background-color: #A0D995;
   }
-  .how-to .tools, .how-to .attention {
+  .tools, .attention {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -315,14 +291,35 @@ a {
     row-gap: 3vh;
     width: 100%;
   }
-  .how-to .tools > section {
+  .tools > section {
     display: flex;
     flex-direction: column;
     row-gap: 0;
     align-items: unset;
     row-gap: 2vh;
   }
-  .how-to .attention > section {
+  .tools figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 2vh;
+    align-items: center;
+    margin: 0;
+  }
+  .tools img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .tools figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    align-items: center;
+    width: 100%;
+  }
+  .attention > section {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -331,7 +328,7 @@ a {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .how-to div {
+  div {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -341,7 +338,7 @@ a {
     border: 1px dashed red;
     background-color: #A0D995;
   }
-  .how-to h5 {
+  h5 {
     font-size: 20px;
     color: red;
     background-color: yellow;
@@ -500,22 +497,26 @@ a {
     font-size: 40px;
     padding: 3% 1%;
   }
-  .how-to .tools > section {
+  .tools > section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .tools figure {
+    width: 48%;
+  }
+  .tools img {
     width: 100%;
   }
-  .how-to .tools figure {
-    width: 48%;
-    align-items: unset;
-  }
-  .how-to .attention h5 {
+  .attention h5 {
     font-size: 30px;
     padding: 1vh;
   }
-  .how-to .attention p {
+  .attention p {
     font-size: 25px;
   }
   .news time, .news a {

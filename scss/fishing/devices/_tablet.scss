@@ -1,71 +1,71 @@
 @media (min-width: 700px) {
 
-    nav{
+  nav{
 
-        > a{
-          font-size: 40px;
-        }
+    > a{
+      font-size: 40px;
+    }
     
-        > ul{
-          width: 65%;
-          display: flex;
-          justify-content: space-between;
-          margin: 0;
-          padding: 0;
+    > ul{
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
     
-          a{
-            text-transform: uppercase;
-            color: $bgMainColor;
+      a{
+        text-transform: uppercase;
+        color: $bgMainColor;
     
-            &:hover{
-              color: $bgMainColor;
-              text-decoration: underline;
-            }
-          }
+        &:hover{
+          color: $bgMainColor;
+          text-decoration: underline;
         }
       }
+    }
+  }
     
-      details{
-        display: none;
-      }
+  details{
+    display: none;
+  }
     
       // HEADER
-      header{
-        section{
-          h2{
-            font-size: 40px;
-            font-family: $FontFamily_L;
-            text-transform: none;
-            letter-spacing: .5px;
-          }
-    
-          p{
-            font-size: 21px;
-            padding-bottom: 4vh;
-          }
-    
-          a{
-            font-size: 18px;
-            padding: 1% 2%;
-          }
-        }
+  header{
+    section{
+      h2{
+        font-size: 40px;
+        font-family: $FontFamily_L;
+        text-transform: none;
+        letter-spacing: .5px;
       }
-
-    p {
-        font-size: 25px;
+    
+      p{
+        font-size: 21px;
+        padding-bottom: 4vh;
+      }
+    
+      a{
+        font-size: 18px;
+        padding: 1% 2%;
+      }
     }
+  }
 
-    .about {
-        img {
-            height: 40vh;
-        }
+  p {
+    font-size: 25px;
+  }
+
+  .about {
+    img {
+        height: 40vh;
     }
+  }
 
-    .style {
+  .style {
 
-        article:last-child {
+    article:last-child {
 
-            > figure {
+      > figure {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -100,34 +100,41 @@
             font-size: 40px;
             padding: 3% 1%;
         }
+  
+    }
+    
+    .tools {
 
-        .tools {
+      > section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 2vh;
+      }
 
-            > section {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                width: 100%;
-            }
+      figure {
+        width: 48%;
+      }
 
-            figure {
-                width: 48%;
-                align-items: unset;
-            }
-        }
+      img {
+        width: 100%;
+      }
 
-        .attention {
 
-            h5 {
-                font-size: 30px;
-                padding: 1vh;
-            }
+    }
 
-            p {
-                font-size: 25px;
-            }
-        }
+    .attention {
+
+      h5 {
+          font-size: 30px;
+          padding: 1vh;
+      }
+
+      p {
+          font-size: 25px;
+      }
     }
 
     .news {
