@@ -1,6 +1,6 @@
 @media(min-width: 1000px){
     nav{
-        padding: 1% 5%;
+        padding: 0.5% 3%;
 
         > a{
             font-size: 40px;
@@ -31,9 +31,9 @@
                 color: $bgMainColor;
         
                 &:hover{
-
-                    background-color: $bgMainColor;
-                    color: white;
+                    color: $bgMainColor;
+                    background-color: white;
+                    text-decoration: underline;
                 }
             }
         }
@@ -139,20 +139,16 @@
             width: 20%;
         }
 
-        h3{
-            height: 14vh;
-        }
-
         span{
             height: 3vh;
         }
         
         a{
             width: 55%;
+            font-size: 18px;
         }
 
         p{
-            height: 35vh;
             line-height: 2;
         }
 
@@ -194,5 +190,21 @@
             }
         }
     }
+
+    footer{
+        padding: 2% 1%;
     
+        ul{
+          width: 40%;
+          padding: 1%;
+    
+          a{
+            transition: .3s;
+    
+            &:hover{
+              color: $bgBtnColor;
+            }
+          }
+        }
+    }
 }

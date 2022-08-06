@@ -300,7 +300,7 @@ li {
     row-gap: 10px;
   }
   .schedule figure > div {
-    width: 50vh;
+    width: 100%;
     height: 50vh;
     background-color: white;
     display: flex;
@@ -369,8 +369,6 @@ li {
     padding-top: 10%;
   }
   .news-body [value="view more articles"] {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     padding: 5%;
     color: white;
@@ -441,12 +439,6 @@ li {
     border: none;
     border-bottom: 2px solid white;
     background-color: #4CACBC;
-  }
-  .contact section input::-moz-placeholder, .contact section textarea::-moz-placeholder {
-    color: white;
-  }
-  .contact section input:-ms-input-placeholder, .contact section textarea:-ms-input-placeholder {
-    color: white;
   }
   .contact section input::placeholder, .contact section textarea::placeholder {
     color: white;
@@ -529,8 +521,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
   .port-row > div {
     width: 30%;
@@ -568,8 +559,7 @@ li {
   }
   .schedule-body figure {
     flex-direction: row;
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
     align-items: center;
     justify-content: center;
   }
@@ -617,7 +607,7 @@ li {
 }
 @media (min-width: 1000px) {
   nav {
-    padding: 1% 5%;
+    padding: 0.5% 3%;
   }
   nav > a {
     font-size: 40px;
@@ -646,8 +636,9 @@ li {
     color: #6CC4A1;
   }
   nav > ul a:hover {
-    background-color: #6CC4A1;
-    color: white;
+    color: #6CC4A1;
+    background-color: white;
+    text-decoration: underline;
   }
   details {
     display: none;
@@ -705,8 +696,7 @@ li {
   }
   .gallery-body {
     display: flex;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   .news {
     row-gap: 60px;
@@ -714,17 +704,14 @@ li {
   .news-body figure {
     width: 20%;
   }
-  .news-body h3 {
-    height: 14vh;
-  }
   .news-body span {
     height: 3vh;
   }
   .news-body a {
     width: 55%;
+    font-size: 18px;
   }
   .news-body p {
-    height: 35vh;
     line-height: 2;
   }
   .news-body [value="view more articles"] {
@@ -738,8 +725,7 @@ li {
   }
   .contact article:last-child {
     flex-direction: row;
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
     padding: 2% 10%;
   }
   .contact article:last-child section:first-child {
@@ -752,5 +738,18 @@ li {
   }
   .contact article:last-child address {
     text-align: left;
+  }
+  footer {
+    padding: 2% 1%;
+  }
+  footer ul {
+    width: 40%;
+    padding: 1%;
+  }
+  footer ul a {
+    transition: 0.3s;
+  }
+  footer ul a:hover {
+    color: #4CACBC;
   }
 }/*# sourceMappingURL=cycling.css.map */
