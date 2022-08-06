@@ -181,6 +181,7 @@ a {
   img {
     width: 100%;
     height: 30vh;
+    border-radius: 15px;
   }
   .tytle-section {
     display: flex;
@@ -206,6 +207,13 @@ a {
     row-gap: 5vh;
   }
   .about > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 5vh;
+  }
+  .about > article:last-child figure {
     display: flex;
     flex-direction: column;
     row-gap: 0;
@@ -273,11 +281,13 @@ a {
     flex-direction: column;
     row-gap: 0;
     align-items: unset;
-    row-gap: 3vh;
+    row-gap: 2vh;
     align-items: center;
+    margin: 0;
   }
   .how-to figure > img {
     width: 100%;
+    border-radius: 15px;
   }
   .how-to figure > figcaption {
     display: flex;
@@ -302,8 +312,15 @@ a {
     row-gap: 0;
     align-items: unset;
     align-items: center;
-    row-gap: 2vh;
+    row-gap: 3vh;
     width: 100%;
+  }
+  .how-to .tools > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    row-gap: 2vh;
   }
   .how-to .attention > section {
     display: flex;
@@ -337,11 +354,7 @@ a {
     height: 80vh;
   }
   .carousel-item:first-child {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    align-items: unset;
-    justify-content: center;
+    padding-top: 24vh;
   }
   .carousel-item:first-child > img {
     width: 100%;
@@ -413,5 +426,64 @@ a {
     color: #6CC4A1;
     font-size: 14px;
     text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  p {
+    font-size: 25px;
+  }
+  .about img {
+    height: 40vh;
+  }
+  .style article:last-child > figure {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .style article:last-child aside {
+    width: 60%;
+  }
+  .style article:last-child figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    align-items: unset;
+    width: 40%;
+    justify-content: center;
+    border: 1px solid gray;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 15px;
+  }
+  .style article:last-child figcaption > p {
+    margin: 0;
+  }
+  .how-to h3 {
+    font-size: 40px;
+    padding: 3% 1%;
+  }
+  .how-to .tools > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .how-to .tools figure {
+    width: 48%;
+    align-items: unset;
+  }
+  .how-to .attention h5 {
+    font-size: 30px;
+    padding: 1vh;
+  }
+  .how-to .attention p {
+    font-size: 25px;
+  }
+  .news time, .news a {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=fishing.css.map */

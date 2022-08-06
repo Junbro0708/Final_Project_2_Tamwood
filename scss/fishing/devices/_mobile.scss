@@ -145,6 +145,7 @@
     img {
         width: 100%;
         height: 30vh;
+        border-radius: 15px
     }
 
     .tytle-section {
@@ -173,13 +174,18 @@
             row-gap: 5vh;
             // width: 100%;
 
+            figure {
+                @include flexBox;
+                row-gap: 5vh;
+            }
+
             img {
                 width: 100%;
             }
 
             p {
 
-                text-align: justify
+                text-align: justify;
             }
         }
     }
@@ -237,11 +243,13 @@
 
         figure {
             @include flexBox;
-            row-gap: 3vh;
+            row-gap: 2vh;
             align-items: center;
+            margin: 0;
 
             > img {
                 width: 100%; 
+                border-radius: 15px
             }
 
             > figcaption {
@@ -265,8 +273,16 @@
         .tools, .attention {
             @include flexBox;
             align-items: center;
-            row-gap: 2vh;
+            row-gap: 3vh;
             width: 100%;
+        }
+
+        .tools {
+            > section {
+                @include flexBox;
+                row-gap: 2vh;
+            }
+            
         }
 
         .attention {
@@ -291,9 +307,7 @@
             color: red;
             background-color: yellow;
             width: 100%;
-        }
-
-        
+        } 
     }
 
     .carousel-indicators {
@@ -304,15 +318,14 @@
         height: 80vh;
     }
 
+
     .carousel-item:first-child {
-        @include flexBox;
-        justify-content: center;
+        padding-top: 24vh;
 
         > img {
             width: 100%;
             height: 30vh;
         }
-        
     }
 
     .carousel-item:nth-child(2) {
